@@ -16,7 +16,9 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
+   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quae soluta tenetur doloribus consequuntur. Iure asperiores recusandae dignissimos placeat odio exercitationem? Officiis earum ipsam expedita autem dicta nobis voluptatibus neque?
+	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, natus. Quam quisquam, sint distinctio asperiores veniam magnam ad similique repellat aliquid repudiandae neque minima molestiae non corrupti quis dolorem facere?
+	 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, ea. Quaerat dolor nostrum doloremque eos expedita nisi aut molestias distinctio ab! Delectus, ducimus? Voluptatem laudantium officia fugiat illo, labore nisi!
 		<?php
 		if ( have_posts() ) :
 
