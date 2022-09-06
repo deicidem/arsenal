@@ -139,6 +139,7 @@ add_action( 'widgets_init', 'arsenal_widgets_init' );
  */
 function arsenal_scripts() {
 	wp_enqueue_style( 'arsenal-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'style', get_template_directory_uri().'/css/style.css', array(), _S_VERSION );
 	wp_style_add_data( 'arsenal-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'arsenal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

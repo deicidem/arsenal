@@ -41,7 +41,7 @@
 			$arsenal_description = get_bloginfo( 'description', 'display' );
 			if ( $arsenal_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $arsenal_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+		
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 

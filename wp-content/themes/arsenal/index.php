@@ -16,41 +16,27 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quae soluta tenetur doloribus consequuntur. Iure asperiores recusandae dignissimos placeat odio exercitationem? Officiis earum ipsam expedita autem dicta nobis voluptatibus neque?
-	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, natus. Quam quisquam, sint distinctio asperiores veniam magnam ad similique repellat aliquid repudiandae neque minima molestiae non corrupti quis dolorem facere?
-	 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, ea. Quaerat dolor nostrum doloremque eos expedita nisi aut molestias distinctio ab! Delectus, ducimus? Voluptatem laudantium officia fugiat illo, labore nisi!
-		<?php
-		if ( have_posts() ) :
+   	<?php
+		 global $post;
+		 // параметры по умолчанию
+$page = get_page_by_path('services');
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+$children = get_children([
+	'post_parent' => $page->ID,
+	'post_type' => 'page'
+]);
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+foreach( $children as $post ){
+	setup_postdata( $post );
+	?>
+	<div class="article-elem">
+		<?php the_title(); ?>
+		<?php the_post_thumbnail();?>
+		<a href="<?php the_permalink(); ?>">Подробнее</a>
+	</div>
+	<?php
+}
+		 ?>
 
 	</main><!-- #main -->
 
