@@ -1,0 +1,44 @@
+@use 'variables' as vars;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+@media (max-width: vars.$size-xxl) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: vars.$size-xl) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: vars.$size-lg) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: vars.$size-md) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: vars.$size-sm) {
+  .container {
+    max-width: 100%;
+  }
+}
