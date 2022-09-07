@@ -20,19 +20,19 @@
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'wordpress' );
+define( 'DB_NAME', 'sql11517247' );
 
 /** Имя пользователя базы данных */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'sql11517247' );
 
 /** Пароль к базе данных */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', 'r6R885pKyw' );
 
 /** Имя сервера базы данных */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'sql11.freesqldatabase.com' );
 
 /** Кодировка базы данных для создания таблиц. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define( 'DB_COLLATE', '' );
