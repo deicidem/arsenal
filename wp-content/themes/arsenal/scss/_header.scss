@@ -1,35 +1,42 @@
 @use "variables" as vars;
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 20px 0 10px;
   background: #fff;
   box-shadow: 0 2px 10px rgba(#000, 0.25);
+  top: 0;
+  left: 0;
   &-branding {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &__logo {
       vertical-align: middle;
     }
+
     &__contacts {
       &__phones {
         display: flex;
         flex-direction: column;
       }
+
       &__phone {
         color: #000;
         text-decoration: none;
         font-size: 16px;
         font-weight: 700;
         transition: 0.25s color ease-out;
+
         &:hover {
           color: vars.$color-main-light;
         }
       }
     }
   }
+
   &-menu {
     .menu-item {
       margin-right: 30px;
@@ -37,36 +44,42 @@
       font-size: 20px;
       // position: static;
       color: #000;
+
       a {
         position: relative;
         color: inherit;
         transition: 0.25s color ease-out;
+
         &::after {
           content: '';
           position: absolute;
           bottom: -1px;
-          // left: 0;
-          left: 50%;
+          left: 0;
+          // left: 50%;
           background: vars.$color-main-light;
           width: 0%;
           height: 2px;
-          // transform: translateX(-0);
-          transform: translateX(-50%);
+          transform: translateX(-0);
+          // transform: translateX(-50%);
           transition: 0.25s width ease-out;
         }
+
         &:hover {
           color: vars.$color-main-light;
+
           &:after {
             width: 100%;
           }
         }
       }
+
       &:hover {
         .sub-menu {
           left: -10px;
           top: calc(100% + 2px);
         }
       }
+
       // .sub-menu {
       //   position: relative;
       //   width: 100%;
@@ -100,20 +113,24 @@
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 10px rgba(#000, 0.25);
+
         .menu-item {
           margin: 0;
           font-size: 16px;
           width: 200px;
+
           a {
             display: inline;
             width: auto;
           }
         }
       }
+
       &:last-child {
         margin-right: 0;
       }
     }
+
     .current-menu-item {
       color: vars.$color-main;
     }

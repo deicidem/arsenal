@@ -18,33 +18,34 @@ get_header();
 
 <main id='primary' class='site-main'>
 	<div class="container">
-	<?php
-	global $post;
-	// параметры по умолчанию
-	$page = get_page_by_path('services');
+		<div class="services-cards">
+			<?php
+			global $post;
+			// параметры по умолчанию
+			$page = get_page_by_path('services');
 
-	$children = get_children([
-		'post_parent' => $page->ID,
-		'post_type' => 'page'
-	]);
+			$children = get_children([
+				'post_parent' => $page->ID,
+				'post_type' => 'page'
+			]);
 
-	foreach ($children as $post) {
-		setup_postdata($post);
-	?>
-		<div class='article-elem'>
-			<?php the_title();
+			foreach ($children as $post) {
+				setup_postdata($post);
 			?>
-			<?php the_post_thumbnail();
+				<div class="services-card">
+					<div class="services-img"><?php the_post_thumbnail(); ?></div>
+					<div class="services-card-wrapper">
+						<div class="services-title"><?php the_title(); ?></div>
+						<a class="button" href='<?php the_permalink(); ?>'>Подробнее</a>
+					</div>
+				</div>
+			<?php
+			}
 			?>
-			<a href='<?php the_permalink(); ?>'>Подробнее</a>
 		</div>
-	<?php
-	}
-	?>
-
 	</div>
 </main><!-- #main -->
 
 <?php
-get_sidebar();
-get_footer();
+// get_sidebar();
+// get_footer();

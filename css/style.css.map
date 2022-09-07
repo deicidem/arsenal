@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,mBAAI;AACJ,IAAI,CAAJ,cAAI;AACJ,IAAI,CAAJ,gBAAI;AACJ,IAAI,CAAJ,kBAAI",
+    "sources": [
+        "../wp-content/themes/arsenal/scss/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

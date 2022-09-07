@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.site-main {
+  margin-top: 160px;
+}
+
 .container {
   max-width: 1320px;
   margin-right: auto;
@@ -11,6 +15,20 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background: vars.$color-main;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 @media (max-width: vars.$size-xxl) {
