@@ -179,4 +179,28 @@
 }
 .services-img {
   max-width: 180px;
+}
+
+.main-blue-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, #52C2F2 0%, #0682B7 100%);
+  border-radius: 20px;
+  width: 60%;
+  margin: 100px auto 0;
+  padding: 20px;
+}
+.main-blue-card-title {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.main-blue-card-info {
+  margin-top: 20px;
+  max-width: 60%;
+  font-size: 18px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

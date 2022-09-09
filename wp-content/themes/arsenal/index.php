@@ -43,6 +43,17 @@ get_header();
 			}
 			?>
 		</div>
+
+		<div class="main-blue-card">
+			<div class="main-blue-card-title">
+				Специальное предложение
+			</div>
+			
+			<div class="main-blue-card-info">
+				Для магазинов и ресторанов расположенных на 1-х этажах:
+				при заключении договора на регулярное мытье витрин, скидка до 30% от прайс-листа
+			</div>
+		</div>
 	</div>
 </main><!-- #main -->
 
