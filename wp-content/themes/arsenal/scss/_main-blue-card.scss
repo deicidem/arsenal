@@ -7,19 +7,21 @@
   flex-direction: column;
   background: vars.$gradient-main;
   border-radius: 20px;
-  width: 60%;
-  margin: 100px auto 0;
-  padding: 20px;
-  &-title{
+  width: 100%;
+  padding: 30px;
+  box-shadow: vars.$grey-shadow;
+  &__title{
     text-align: center;
     color: #fff;
     font-size: 36px;
     font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
-  &-info{
-    margin-top: 20px;
+  &__info{
     max-width: 60%;
     font-size: 18px;
     color: #fff;
+    text-align: center;
   }
 }

@@ -1,0 +1,18 @@
+@use "variables" as vars;
+
+.about {
+  &-wrapper {
+    position: relative;
+  }
+  &-content {
+    width: 65%;
+    font-size: 20px;
+  }
+  &-image{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    max-height: 120%;
+    transform: translate(0, -50%);
+  }
+}
