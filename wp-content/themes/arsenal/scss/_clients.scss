@@ -1,0 +1,17 @@
+@use "variables" as vars;
+
+.clients {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      border-radius: 20px;
+      background-color: #fff;
+      padding: 30px;
+    }
+  }
+}

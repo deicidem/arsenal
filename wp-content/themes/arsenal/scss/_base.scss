@@ -7,8 +7,10 @@
 .site-main {
   margin-top: 50px;
 }
+
 .section {
   padding: 60px 0;
+
   &-title {
     font-size: 36px;
     color: vars.$color-main;
@@ -16,13 +18,16 @@
     margin-top: 0;
     margin-bottom: 40px;
   }
+
   &_blue {
     background: vars.$gradient-main;
   }
+
   &_blue &-title {
     color: #fff;
   }
 }
+
 .container {
   max-width: 1320px;
   margin-right: auto;
@@ -34,16 +39,32 @@
 
 .button {
   display: inline-block;
-  background: vars.$gradient-main;
+  background-image: linear-gradient(to right, vars.$color-main-light,  vars.$color-main-dark, vars.$color-main-light, vars.$color-main-dark);
   border-radius: 10px;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
   padding: 5px 30px;
   box-shadow: 0 2px 4px rgba(#000, 0.15);
+  background-size: 300% 100%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
   &:hover {
     color: #fff;
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
   }
+
+  &:focus {
+    outline: none;
+  }
+
   &:visited {
     color: #fff;
   }

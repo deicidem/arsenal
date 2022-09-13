@@ -4,6 +4,7 @@
   &-wrapper {
     position: relative;
     padding: 0 40px;
+
     .slider-arrow {
       position: absolute;
       top: 50%;
@@ -15,7 +16,9 @@
       height: 40px;
       width: 20px;
       cursor: pointer;
-      &::after, &::before {
+
+      &::after,
+      &::before {
         content: '';
         position: absolute;
         width: 100%;
@@ -23,43 +26,67 @@
         background: #000;
         left: 0;
       }
+
       &::after {
         transform: rotate(45deg);
       }
+
       &::before {
         transform: rotate(-45deg);
       }
+
       &-prev {
         left: 0;
-        &::after, &::before {
+
+        &::after,
+        &::before {
           transform-origin: left;
         }
       }
+
       &-next {
         right: 0;
-        &::after, &::before {
+
+        &::after,
+        &::before {
           transform-origin: right;
         }
       }
     }
   }
+
   &-card {
+    position: relative;
+    // max-width: 60%;
     padding: 40px 30px;
     background: #fff;
     box-shadow: vars.$grey-shadow;
     border-radius: 15px;
+
+    &-star {
+      display: flex;
+      &-wrapper {
+        position: absolute;
+        right: 30px;
+
+      }
+    }
+
     &__wrapper {
       padding: 20px;
     }
+
     &__header {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     &__title {
       font-size: 24px;
       font-weight: 500;
     }
+
     &__line {
       height: 3px;
       background: vars.$color-main;
@@ -67,6 +94,7 @@
       margin-top: 5px;
       margin-bottom: 15px;
     }
+
     &__text {
       font-size: 22px;
     }

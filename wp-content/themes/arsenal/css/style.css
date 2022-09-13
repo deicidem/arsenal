@@ -34,16 +34,23 @@
 
 .button {
   display: inline-block;
-  background: linear-gradient(90deg, #52C2F2 0%, #0682B7 100%);
+  background-image: linear-gradient(to right, #52C2F2, #0682B7, #52C2F2, #0682B7);
   border-radius: 10px;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
   padding: 5px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
 }
 .button:hover {
   color: #fff;
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.button:focus {
+  outline: none;
 }
 .button:visited {
   color: #fff;
@@ -163,6 +170,9 @@
   color: #128DC2;
 }
 
+.services {
+  padding-top: 110px;
+}
 .services-cards {
   width: 100%;
   display: flex;
@@ -235,7 +245,7 @@
 }
 .about-image {
   position: absolute;
-  right: 0;
+  right: 40px;
   top: 50%;
   max-height: 120%;
   transform: translate(0, -50%);
@@ -307,10 +317,18 @@
   transform-origin: right;
 }
 .reviews-card {
+  position: relative;
   padding: 40px 30px;
   background: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+}
+.reviews-card-star {
+  display: flex;
+}
+.reviews-card-star-wrapper {
+  position: absolute;
+  right: 30px;
 }
 .reviews-card__wrapper {
   padding: 20px;
@@ -333,4 +351,38 @@
 }
 .reviews-card__text {
   font-size: 22px;
+}
+
+.clients-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-wrapper-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.pluses-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pluses-wrapper-item {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.pluses-wrapper-item-number {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 600;
+}
+.pluses-wrapper-item-text {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

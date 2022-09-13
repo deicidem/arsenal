@@ -47,6 +47,7 @@ get_header();
 			</div>
 		</div>
 	</section>
+
 	<section class="section">
 		<div class="container">
 			<div class="main-blue-card">
@@ -89,6 +90,43 @@ get_header();
 
 		</div>
 	</section>
+
+	<section class="section section_blue">
+		<div class="container">
+			<h2 class="section-title">Плюсы Arsenal Cleaning</h2>
+			<div class="pluses-wrapper">
+				<div class="pluses-wrapper-column">
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number">1</div>
+						<div class="pluses-wrapper-item-text">Уборка любой сложности</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number">2</div>
+						<div class="pluses-wrapper-item-text">Выгодные скидки для клиентов по договору</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number">3</div>
+						<div class="pluses-wrapper-item-text">Высокий профессионализм сотрудников</div>
+					</div>
+				</div>
+				<div class="pluses-wrapper-column">
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number">4</div>
+						<div class="pluses-wrapper-item-text">Заказ клининговых услуг прямо на сайте</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number">5</div>
+						<div class="pluses-wrapper-item-text">Работа в круглосуточном режиме</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number">6</div>
+						<div class="pluses-wrapper-item-text">Безопасные и эффективные чистящие средства</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="section features">
 		<div class="container">
 			<h2 class="section-title">Выбирайте нас</h2>
@@ -102,13 +140,13 @@ get_header();
 				<div class="features-card">
 					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
 					<div class="features-card__title">
-						Конкурентоспособные цены</div>
+						Профессиональные чистящие средства</div>
 					</img>
 				</div>
 				<div class="features-card">
 					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
 					<div class="features-card__title">
-						Конкурентоспособные цены</div>
+						Специализированное оборудование</div>
 					</img>
 				</div>
 				<div class="features-card">
@@ -137,10 +175,30 @@ get_header();
 				</div>
 			</div>
 	</section>
+
 	<section class="section reviews">
 		<div class="container">
 			<h2 class="section-title">Отзывы</h2>
 			<div class="reviews-wrapper">
+				<div class="reviews-card__wrapper">
+					<div class="reviews-card">
+						<div class="reviews-card-star-wrapper">
+							<div class="reviews-card-star">
+								<img src="<?php echo get_template_directory_uri() ?>/img/star.svg" alt="">
+								<img src="<?php echo get_template_directory_uri() ?>/img/star.svg" alt="">
+								<img src="<?php echo get_template_directory_uri() ?>/img/star.svg" alt="">
+								<img src="<?php echo get_template_directory_uri() ?>/img/star.svg" alt="">
+								<img src="<?php echo get_template_directory_uri() ?>/img/star.svg" alt="">
+							</div>
+						</div>
+						<div class="reviews-card__header">
+							<div class="reviews-card__title">Анна</div>
+							<div class="reviews-card__rate"></div>
+						</div>
+						<div class="reviews-card__line"></div>
+						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
+					</div>
+				</div>
 				<div class="reviews-card__wrapper">
 					<div class="reviews-card">
 						<div class="reviews-card__header">
@@ -160,16 +218,8 @@ get_header();
 						<div class="reviews-card__line"></div>
 						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
 					</div>
-				</div><div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div><div class="reviews-card__wrapper">
+				</div>
+				<div class="reviews-card__wrapper">
 					<div class="reviews-card">
 						<div class="reviews-card__header">
 							<div class="reviews-card__title">Анна</div>
@@ -212,9 +262,26 @@ get_header();
 			</div>
 		</div>
 	</section>
+
 	<section class="section section_blue">
 		<div class="container">
 			<h2 class="section-title">Клиенты</h2>
+			<div class="clients">
+				<div class="clients-wrapper">
+					<div class="clients-wrapper-item">
+						<img src="<?php echo get_template_directory_uri() ?>/img/gazprom-logo.png" alt="">
+					</div>
+					<div class="clients-wrapper-item">
+						<img src="<?php echo get_template_directory_uri() ?>/img/kenguru-logo.png" alt="">
+					</div>
+					<div class="clients-wrapper-item">
+						<img src="<?php echo get_template_directory_uri() ?>/img/ticketland-logo.png" alt="">
+					</div>
+					<div class="clients-wrapper-item">
+						<img src="<?php echo get_template_directory_uri() ?>/img/vgtrk-logo.png" alt="">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </main><!-- #main -->

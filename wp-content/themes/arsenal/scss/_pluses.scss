@@ -1,0 +1,25 @@
+@use "variables" as vars;
+
+.pluses {
+  &-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    &-item {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+
+      &-number {
+        color: #fff;
+        font-size: 46px;
+        font-weight: 600;
+      }
+
+      &-text {
+        margin-left: 20px;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
