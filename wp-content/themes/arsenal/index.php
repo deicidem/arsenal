@@ -73,13 +73,42 @@ get_header();
 			foreach ($pages as $post) {
 				setup_postdata($post);
 			?>
-				<h2 class="section-title"><?php the_title() ?></h2>
 				<div class="about-wrapper">
 					<div class="about-content">
+						<h2 class="section-title"><?php the_title() ?></h2>
 						<?php the_content() ?>
 						<a href="<?php the_permalink() ?>" class="button">Подробнее</a>
 					</div>
 					<img src="<?php echo get_the_post_thumbnail_url() ?>" class="about-image">
+				</div>
+
+			<?php
+				break;
+			}
+			wp_reset_postdata();
+			?>
+
+		</div>
+	</section>
+
+	<section class="section order">
+		<div class="container">
+			<?php $page = get_page_by_path('order');
+			$pages = get_pages([
+				'include'      => $page->ID,
+				'post_type'    => 'page',
+				'post_status'  => 'publish',
+			]);
+			foreach ($pages as $post) {
+				setup_postdata($post);
+			?>
+				<div class="order-wrapper">
+					<img src="<?php echo get_the_post_thumbnail_url() ?>" class="order-image">
+					<div class="order-content">
+						<h2 class="section-title"><?php the_title() ?></h2>
+						<?php the_content() ?>
+						<a href="<?php the_permalink() ?>" class="button">Подробнее</a>
+					</div>
 				</div>
 
 			<?php
@@ -132,45 +161,27 @@ get_header();
 			<h2 class="section-title">Выбирайте нас</h2>
 			<div class="features-wrapper">
 				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
+					<img src="<?php echo get_template_directory_uri() ?>/img/price.svg" class="features-card__image">
 					<div class="features-card__title">
 						Конкурентоспособные цены</div>
 					</img>
 				</div>
 				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
+					<img src="<?php echo get_template_directory_uri() ?>/img/material.svg" class="features-card__image">
 					<div class="features-card__title">
 						Профессиональные чистящие средства</div>
 					</img>
 				</div>
 				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
+					<img src="<?php echo get_template_directory_uri() ?>/img/vacuum.svg" class="features-card__image">
 					<div class="features-card__title">
 						Специализированное оборудование</div>
 					</img>
 				</div>
 				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
+					<img src="<?php echo get_template_directory_uri() ?>/img/client.svg" class="features-card__image">
 					<div class="features-card__title">
-						Конкурентоспособные цены</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
-					<div class="features-card__title">
-						Конкурентоспособные цены</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
-					<div class="features-card__title">
-						Конкурентоспособные цены</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/icon.png" class="features-card__image">
-					<div class="features-card__title">
-						Конкурентоспособные цены</div>
+						Клиентоориентированность</div>
 					</img>
 				</div>
 			</div>

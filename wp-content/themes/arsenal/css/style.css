@@ -99,6 +99,10 @@
 .header-branding__logo {
   vertical-align: middle;
 }
+.header-branding__contacts {
+  display: flex;
+  align-items: center;
+}
 .header-branding__contacts__phones {
   display: flex;
   flex-direction: column;
@@ -112,6 +116,15 @@
 }
 .header-branding__contacts__phone:hover {
   color: #52C2F2;
+}
+.header-branding-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  padding: 6px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #52C2F2 0%, #0682B7 100%);
 }
 .header-menu .menu-item {
   margin-right: 30px;
@@ -204,7 +217,7 @@
   transition: 0.25s all ease-out;
 }
 .services-card__img {
-  width: 30%;
+  height: 120px;
 }
 .services-card:hover .services-card__title {
   color: #52C2F2;
@@ -269,7 +282,7 @@
 }
 .features-card__title {
   font-size: 20px;
-  color: #128DC2;
+  color: #686868;
   max-width: 80%;
   text-align: center;
 }
@@ -385,4 +398,21 @@
   margin-left: 20px;
   font-size: 18px;
   color: #fff;
+}
+
+.order-wrapper {
+  position: relative;
+}
+.order-content {
+  margin-left: auto;
+  width: 65%;
+  font-size: 20px;
+}
+.order-image {
+  position: absolute;
+  left: 0;
+  margin-right: 40px;
+  top: 50%;
+  max-height: 120%;
+  transform: translate(0, -50%);
 }/*# sourceMappingURL=style.css.map */

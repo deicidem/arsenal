@@ -19,6 +19,8 @@
     }
 
     &__contacts {
+      display: flex;
+      align-items: center;
       &__phones {
         display: flex;
         flex-direction: column;
@@ -35,6 +37,16 @@
           color: vars.$color-main-light;
         }
       }
+    }
+
+    &-search{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 16px;
+      padding: 6px;
+      border-radius: 50%;
+      background: vars.$gradient-main; 
     }
   }
 

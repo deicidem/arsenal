@@ -37,6 +37,9 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 							<a class="header-branding__contacts__phone" href="tel:84956251580">+7 (495) 625-15-80</a>
 							<a class="header-branding__contacts__phone" href="tel:84957902022">+7 (495) 790-20-22</a>
 						</div>
+						<div class="header-branding-search">
+							<img src="<?php echo get_template_directory_uri() . '/img/search.svg' ?>" alt="">
+						</div>
 					</div>
 				</div>
 

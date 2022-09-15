@@ -1,0 +1,20 @@
+@use "variables" as vars;
+
+.order {
+  &-wrapper {
+    position: relative;
+  }
+  &-content {
+    margin-left: auto;
+    width: 65%;
+    font-size: 20px;
+  }
+  &-image{
+    position: absolute;
+    left: 0;
+    margin-right: 40px;
+    top: 50%;
+    max-height: 120%;
+    transform: translate(0, -50%);
+  }
+}

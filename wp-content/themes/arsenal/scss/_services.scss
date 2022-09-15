@@ -83,7 +83,7 @@
       transition: 0.25s all ease-out;
     }
     &__img {
-      width: 30%;
+      height: 120px;
     }
     &:hover &__title {
       color: vars.$color-main-light;
