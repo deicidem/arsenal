@@ -1,18 +1,21 @@
 @use "variables" as vars;
 
 .about {
-  &-wrapper {
+  .wp-block-media-text {
     position: relative;
+    display: block;
   }
-  &-content {
+  .wp-block-media-text__content {
     width: 65%;
     font-size: 20px;
+    padding: 0;
   }
-  &-image{
+  .wp-block-media-text__media {
     position: absolute;
     right: 40px;
     top: 50%;
     max-height: 120%;
     transform: translate(0, -50%);
+    margin: 0;
   }
 }

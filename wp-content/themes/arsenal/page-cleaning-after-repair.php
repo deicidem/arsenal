@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -14,22 +15,48 @@
 
 get_header();
 ?>
-	<main id="primary" class="site-main">
-		<?php
-		while ( have_posts() ) :
-			the_post();
+<main id="primary" class="site-main">
+	<section class="section">
+		<div class="container">
+			<div class="main-blue-card">
+				<div class="main-blue-card__title">
+					Генеральная уборка после ремонта
+				</div>
+				<div class="main-blue-card__info">
+					Ищете квалифицированных клинеров, так как требуется генеральная уборка после ремонта в Москве или ближайшем Подмосковье? Доверьте проведение работ специалистам ARSENAL Cleaning и устраните проблемы в короткие сроки! Услуги доступны и частным лицам, и коммерческим организациям. Компания убирает офисы, квартиры, магазины, коттеджи, склады, таунхаусы и другие объекты.
+				</div>
+			</div>
+		</div>
+	</section>
 
-			get_template_part( 'template-parts/content', 'page' );
+	<section class="section about">
+		<div class="container">
+			<?php $page = get_page_by_path('services/cleaning-after-repair');
+			$pages = get_pages([
+				'include'      => $page->ID,
+				'post_type'    => 'page',
+				'post_status'  => 'publish',
+			]);
+			foreach ($pages as $post) {
+				setup_postdata($post);
+			?>
+				<div class="about-wrapper">
+					<div class="about-content">
+						<h2 class="section-title"><?php the_title() ?></h2>
+						<?php the_content() ?>
+					</div>
+					<img src="<?php echo get_the_post_thumbnail_url() ?>" class="about-image">
+				</div>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<?php
+				break;
+			}
+			wp_reset_postdata();
+			?>
+		</div>
+	</section>
 
-		endwhile; // End of the loop.
-		?>
-			
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
 get_footer();

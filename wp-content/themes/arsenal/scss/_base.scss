@@ -39,7 +39,7 @@
 
 .button {
   display: inline-block;
-  background-image: linear-gradient(to right, vars.$color-main-light,  vars.$color-main-dark, vars.$color-main-light, vars.$color-main-dark);
+  background-image: linear-gradient(to right, vars.$color-main-light, vars.$color-main-dark, vars.$color-main-light, vars.$color-main-dark);
   border-radius: 10px;
   font-size: 18px;
   color: #fff;
@@ -67,6 +67,20 @@
 
   &:visited {
     color: #fff;
+  }
+}
+
+.wp-block-table {
+  margin-top: 60px;
+  td{
+
+  }
+  tr{
+    font-size:18px;
+    margin-bottom: 10px;
+
+    :first-child:after{
+    }
   }
 }
 

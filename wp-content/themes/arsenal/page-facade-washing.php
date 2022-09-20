@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -14,29 +15,49 @@
 
 get_header();
 ?>
-<p>123</p>
-<p>123</p>
-<p>123</p>
-<p>123</p>
-<p>123</p>
-<p>123</p>
-<p>123</p>
-	<main id="primary" class="site-main">
-		<?php
-		while ( have_posts() ) :
-			the_post();
+<main id="primary" class="site-main">
+	<section class="section">
+		<div class="container">
+			<div class="main-blue-card">
+				<div class="main-blue-card__title">
+					Мойка фасада
+				</div>
+				<div class="main-blue-card__info">
+					Мойка фасада обычно производится 2 раза в год, придает зданию опрятный и ухоженный вид. Мытье – довольно сложный процесс, который отнимает много времени и немало сил, предполагает использование специальных средств. По этой причине для выполнения работ часто привлекаются профессионалы из области клининга.
+				</div>
+			</div>
+		</div>
+	</section>
 
-			get_template_part( 'template-parts/content', 'page' );
+	<section class="section about">
+		<div class="container">
+			<?php $page = get_page_by_path('services/facade-washing');
+			$pages = get_pages([
+				'include'      => $page->ID,
+				'post_type'    => 'page',
+				'post_status'  => 'publish',
+			]);
+			foreach ($pages as $post) {
+				setup_postdata($post);
+			?>
+				<div class="about-wrapper">
+					<div class="about-content">
+						<h2 class="section-title"><?php the_title() ?></h2>
+						<?php the_content() ?>
+					</div>
+					<img src="<?php echo get_the_post_thumbnail_url() ?>" class="about-image">
+				</div>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<?php
+				break;
+			}
+			wp_reset_postdata();
+			?>
 
-		endwhile; // End of the loop.
-		?>
-			
-	</main><!-- #main -->
+		</div>
+	</section>
+
+</main><!-- #main -->
 
 <?php
 get_footer();

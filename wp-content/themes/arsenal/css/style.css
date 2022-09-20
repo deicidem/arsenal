@@ -56,6 +56,13 @@
   color: #fff;
 }
 
+.wp-block-table {
+  margin-top: 60px;
+}
+.wp-block-table tr {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 @media (max-width: 1400px) {
   .container {
     max-width: 1140px;
@@ -249,19 +256,22 @@
   text-align: center;
 }
 
-.about-wrapper {
+.about .wp-block-media-text {
   position: relative;
+  display: block;
 }
-.about-content {
+.about .wp-block-media-text__content {
   width: 65%;
   font-size: 20px;
+  padding: 0;
 }
-.about-image {
+.about .wp-block-media-text__media {
   position: absolute;
   right: 40px;
   top: 50%;
   max-height: 120%;
   transform: translate(0, -50%);
+  margin: 0;
 }
 
 .features-wrapper {
@@ -394,6 +404,11 @@
   font-size: 46px;
   font-weight: 600;
 }
+.pluses-wrapper-item-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
 .pluses-wrapper-item-text {
   margin-left: 20px;
   font-size: 18px;
@@ -415,4 +430,23 @@
   top: 50%;
   max-height: 120%;
   transform: translate(0, -50%);
+}
+
+.requisites-wrapper {
+  display: flex;
+}
+.requisites-wrapper-item {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.requisites-wrapper-item-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.requisites-wrapper-item-text {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
