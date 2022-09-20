@@ -1,0 +1,52 @@
+@use "variables" as vars;
+
+.form {
+  &-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    background: vars.$gradient-main;
+    padding: 20px 40px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: vars.$blue-shadow;
+    p {
+      margin: 10px 0;
+    }
+  }
+  & &-submit {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    background: none;
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover {
+      color: vars.$color-main;
+      background: #fff;
+    }
+  }
+  .wpcf7-spinner {
+    display: none;
+  }
+  &-label {
+    input, textarea {
+      width: 100%;
+      font-size: 18px;
+      padding: 10px 30px;
+      border-radius: 10px;
+    }
+    .wpcf7-not-valid-tip {
+      display: none;
+      color: #fff;
+    }
+    
+  }
+  &-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+  }
+}

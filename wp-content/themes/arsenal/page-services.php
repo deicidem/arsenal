@@ -15,38 +15,42 @@
 
 get_header();
 ?>
+
+
+<main id="primary" class="site-main">
 <section class="section services">
 	<div class="container">
 		<h2 class="section-title">Услуги</h2>
 		<div class="services-cards">
-			<?php
-			global $post;
-			// параметры по умолчанию
-			$page = get_page_by_path('services');
-			$children = get_children([
-				'post_parent' => $page->ID,
-				'post_type' => 'page'
-			]);
+				<?php
+				global $post;
+				// параметры по умолчанию
+				$page = get_page_by_path('services');
+				$children = get_children([
+					'post_parent' => $page->ID,
+					'post_type' => 'page'
+				]);
 
-			foreach ($children as $post) {
-				setup_postdata($post);
-			?>
-				<div class="services-card">
-					<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="services-card__img">
+				foreach ($children as $post) {
+					setup_postdata($post);
+				?>
+					<a href="<?php the_permalink(); ?>" class="services-card">
+						<div class="services-card__img">
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+						</div>
 
-					<div class="services-card__content">
-						<div class="services-card__title"><?php the_title(); ?></div>
-					</div>
-				</div>
-			<?php
-			}
-			wp_reset_postdata();
-			?>
-		</div>
+						<div class="services-card__content">
+							<div class="services-card__title"><?php the_title(); ?></div>
+						</div>
+					</a>
+				<?php
+				}
+				wp_reset_postdata();
+				?>
+			</div>
 	</div>
 </section>
 
-<main id="primary" class="site-main">
 	<?php
 	while (have_posts()) :
 		the_post();

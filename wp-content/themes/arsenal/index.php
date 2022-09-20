@@ -33,17 +33,30 @@ get_header();
 				foreach ($children as $post) {
 					setup_postdata($post);
 				?>
-					<div class="services-card">
-						<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="services-card__img">
+					<a href="<?php the_permalink(); ?>" class="services-card">
+						<div class="services-card__img">
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+						</div>
 
 						<div class="services-card__content">
 							<div class="services-card__title"><?php the_title(); ?></div>
 						</div>
-					</div>
+					</a>
 				<?php
 				}
 				wp_reset_postdata();
 				?>
+			</div>
+		</div>
+	</section>
+
+	<section class="section form">
+		<div class="container">
+			<div class="form-wrapper">
+				<h2 class="form-title">Оставить заявку</h2>
+				<div class="form-content">
+				<?php echo do_shortcode('[contact-form-7 id="124" title="Contact form 1"]'); ?>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -64,7 +77,7 @@ get_header();
 
 	<section class="section about">
 		<div class="container">
-			<?php $page = get_page_by_path('about');
+			<?php $page = get_page_by_path('main');
 			$pages = get_pages([
 				'include'      => $page->ID,
 				'post_type'    => 'page',
@@ -75,7 +88,7 @@ get_header();
 			?>
 				<div class="about-wrapper">
 					<div class="about-content">
-						<h2 class="section-title"><?php the_title() ?></h2>
+						<h2 class="section-title">О компании</h2>
 						<?php the_content() ?>
 						<a href="<?php the_permalink() ?>" class="button">Подробнее</a>
 					</div>

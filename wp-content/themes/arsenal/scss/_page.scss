@@ -1,0 +1,46 @@
+@use "variables" as vars;
+
+.page {
+  .wp-block-media-text {
+    position: relative;
+    display: block;
+    &__content {
+      width: 65%;
+      font-size: 20px;
+      padding: 0;
+    }
+    &__media {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      max-height: 150%;
+      transform: translate(0, -50%);
+      margin: 0;
+      width: 30%;
+      height: 150%;
+      text-align: center;
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+  .wp-block-table {
+    tr {
+      border-bottom: 1px solid rgba(#000, 0.1);
+      td {
+        padding: 5px;
+      }
+    }
+    tr:first-child {
+      td {
+        font-weight: 700;
+        color: vars.$color-main;
+      }
+      border-bottom: 2px solid vars.$color-main;
+    }
+    tr:last-child {
+      border-bottom: none;
+    }
+  }
+}

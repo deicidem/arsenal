@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,14 +12,28 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="section site-footer">
+	<div class="container">
+		<div class="footer-wrapper">
+			<div class="footer-block">
+				<div class="footer-block__title">Меню</div>
+				<div class="footer-block__content"></div>
+			</div>
+			<div class="footer-block">
+				<div class="footer-block__title">Услуги</div>
+				<div class="footer-block__content"></div>
+			</div>
+			<div class="footer-block">
+				<div class="footer-block__title">Контакты</div>
+				<div class="footer-block__content"></div>
+			</div>
+		</div>
+	</div>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

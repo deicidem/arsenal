@@ -1,0 +1,11 @@
+@use "variables" as vars;
+
+.footer {
+  &-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  &-block {
+    flex: 1 1 auto;
+  }
+}

@@ -18,33 +18,19 @@ get_header();
 
 <main id="primary" class="site-main">
 
-	<section class="section about">
-		<div class="container">
-			<?php $page = get_page_by_path('about');
-			$pages = get_pages([
-				'include'      => $page->ID,
-				'post_type'    => 'page',
-				'post_status'  => 'publish',
-			]);
-			foreach ($pages as $post) {
-				setup_postdata($post);
-			?>
-				<div class="about-wrapper">
-					<div class="about-content">
-						<h2 class="section-title"><?php the_title() ?></h2>
-						<?php the_content() ?>
-						<a href="<?php the_permalink() ?>" class="button">Подробнее</a>
-					</div>
-					<img src="<?php echo get_the_post_thumbnail_url() ?>" class="about-image">
-				</div>
+<?php
+	while (have_posts()) :
+		the_post();
 
-			<?php
-				break;
-			}
-			wp_reset_postdata();
-			?>
-		</div>
-	</section>
+		get_template_part('template-parts/content', 'page');
+
+		// If comments are open or we have at least one comment, load up the comment template.
+		if (comments_open() || get_comments_number()) :
+			comments_template();
+		endif;
+
+	endwhile; // End of the loop.
+	?>
 
 	<section class="section section_blue">
 		<div class="container">
