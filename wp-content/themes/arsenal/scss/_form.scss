@@ -1,19 +1,24 @@
 @use "variables" as vars;
 
 .form {
+  display: flex;
+
   &-wrapper {
     position: relative;
-    max-width: 500px;
+    min-width: 460px;
+    max-width: 600px;
     margin: 0 auto;
     background: vars.$gradient-main;
     padding: 20px 40px;
     color: #fff;
     border-radius: 20px;
     box-shadow: vars.$blue-shadow;
+
     p {
       margin: 10px 0;
     }
   }
+
   & &-submit {
     display: block;
     border-radius: 10px;
@@ -23,30 +28,99 @@
     background: none;
     margin: 0 auto;
     cursor: pointer;
+
     &:hover {
       color: vars.$color-main;
       background: #fff;
     }
   }
+
   .wpcf7-spinner {
     display: none;
   }
+
   &-label {
-    input, textarea {
+
+    input,
+    textarea {
       width: 100%;
       font-size: 18px;
       padding: 10px 30px;
       border-radius: 10px;
     }
+
     .wpcf7-not-valid-tip {
       display: none;
       color: #fff;
     }
-    
+
   }
+
   &-title {
     text-align: center;
     font-size: 36px;
     margin: 0;
+
+    &-blue {
+      text-align: left;
+      color: vars.$color-main-light;
+    }
+  }
+
+  &-right {
+    position: relative;
+    margin-left: 50px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: vars.$blue-shadow;
+    padding: 20px 40px;
+
+    &-wrapper {
+      &-main {
+        margin-top: 30px;
+        max-width: 74%;
+        // color: vars.$color-main-light;
+        font-size: 18px;
+
+        strong {
+          color: vars.$color-main-light;
+          font-weight: 500;
+        }
+      }
+
+      &-text {
+        margin-top: 20px;
+      }
+    }
+
+
+    &-img {
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translate(0, -50%);
+
+      img {
+        width: 250px;
+      }
+    }
+
+    &-subtitle {
+      strong {
+        color: vars.$color-main-light;
+      }
+    }
+
+    &-link {
+      img {
+        width: 60px;
+
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
   }
 }
