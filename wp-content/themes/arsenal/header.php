@@ -28,11 +28,23 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'arsenal'); ?></a>
 
+		<div class="overlay">
+			<div class="popup form-popup">
+				<div class="popup-close"></div>
+				<div class="form-wrapper">
+					<h2 class="form-title">Оставить заявку</h2>
+					<div class="form-content">
+						<?php echo do_shortcode('[contact-form-7 id="125" title="Contact form 2"]'); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<header id="masthead" class="header">
 			<div class="container">
 				<div class="header-branding">
 					<a href="<?php echo home_url() ?>">
-					<img class="header-branding__logo" src="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" alt="ARSENAL Cleaning">
+						<img class="header-branding__logo" src="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" alt="ARSENAL Cleaning">
 					</a>
 					<div class="header-branding__contacts">
 						<div class="header-branding__contacts__phones">
@@ -40,7 +52,7 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 							<a class="header-branding__contacts__phone" href="tel:84957902022">+7 (495) 790-20-22</a>
 						</div>
 						<div class="header-branding-search">
-							<img src="<?php echo get_template_directory_uri() . '/img/search.svg' ?>" alt="">
+							<img src="<?php echo get_template_directory_uri() . '/img/phone.svg' ?>" alt="">
 						</div>
 					</div>
 				</div>
@@ -56,7 +68,7 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 						)
 					);
 					?>
-					
+
 				</nav><!-- #site-navigation -->
 			</div>
 		</header><!-- #masthead -->
