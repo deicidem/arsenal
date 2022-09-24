@@ -44,6 +44,41 @@ get_header();
 	endwhile; // End of the loop.
 	?>
 
+	<section class="section">
+		<div class="container">
+			<h2 class="section-title">Плюсы Arsenal Cleaning</h2>
+			<div class="pluses-wrapper">
+				<div class="pluses-wrapper-line">
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number red">1</div>
+						<div class="pluses-wrapper-item-text">Уборка любой сложности</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number orange">2</div>
+						<div class="pluses-wrapper-item-text">Большой опыт работы на рынке клининга Москвы и ближайшего Подмосковья</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number green">3</div>
+						<div class="pluses-wrapper-item-text">Срочный выезд клинеров в любое время дня и ночи</div>
+					</div>
+				</div>
+				<div class="pluses-wrapper-line">
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number purple">4</div>
+						<div class="pluses-wrapper-item-text">Использование экологически безопасных биоразлагаемых моющих средств</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number blue">5</div>
+						<div class="pluses-wrapper-item-text">Прием оплаты за услуги по наличному или безналичному расчету</div>
+					</div>
+					<div class="pluses-wrapper-item">
+						<div class="pluses-wrapper-item-number pink">6</div>
+						<div class="pluses-wrapper-item-text">Мощное, современное и многофункциональное клининговое оборудование</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </main><!-- #main -->
 
 <?php

@@ -17,6 +17,22 @@ get_header();
 ?>
 
 <main id='primary' class='site-main'>
+
+	<div class="section">
+		<div class="container">
+			<div class="main">
+				<div class="main-wrapper">
+					<div class="main-title">Доверьтесь профессионалам!</div>
+					<div class="main-subtitle">Профессиональные клининговые услуги в Москве и ближайшем Подмосковье</div>
+					<a href="#" class="button">Обратный звонок</a>
+				</div>
+				<div class="main-img">
+					<img src="<?php echo get_template_directory_uri() ?>/img/main.png" alt="ARSENAL Cleaning">
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<section class="section services">
 		<div class="container">
 			<h2 class="section-title">Услуги</h2>
@@ -62,6 +78,37 @@ get_header();
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section class="section features">
+		<div class="container">
+			<h2 class="section-title">Выбирайте нас</h2>
+			<div class="features-wrapper">
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/price.svg" class="features-card__image">
+					<div class="features-card__title">
+						Конкурентоспособные цены</div>
+					</img>
+				</div>
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/material.svg" class="features-card__image">
+					<div class="features-card__title">
+						Профессиональные чистящие средства</div>
+					</img>
+				</div>
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/vacuum.svg" class="features-card__image">
+					<div class="features-card__title">
+						Специализированное оборудование</div>
+					</img>
+				</div>
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/client.svg" class="features-card__image">
+					<div class="features-card__title">
+						Клиентоориентированность</div>
+					</img>
+				</div>
+			</div>
 	</section>
 
 	<section class="section about">
@@ -122,71 +169,40 @@ get_header();
 		</div>
 	</section>
 
-	<section class="section section_blue">
+	<section class="section">
 		<div class="container">
 			<h2 class="section-title">Плюсы Arsenal Cleaning</h2>
 			<div class="pluses-wrapper">
-				<div class="pluses-wrapper-column">
+				<div class="pluses-wrapper-line">
 					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number">1</div>
+						<div class="pluses-wrapper-item-number red">1</div>
 						<div class="pluses-wrapper-item-text">Уборка любой сложности</div>
 					</div>
 					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number">2</div>
+						<div class="pluses-wrapper-item-number orange">2</div>
 						<div class="pluses-wrapper-item-text">Выгодные скидки для клиентов по договору</div>
 					</div>
 					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number">3</div>
+						<div class="pluses-wrapper-item-number green">3</div>
 						<div class="pluses-wrapper-item-text">Высокий профессионализм сотрудников</div>
 					</div>
 				</div>
-				<div class="pluses-wrapper-column">
+				<div class="pluses-wrapper-line">
 					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number">4</div>
+						<div class="pluses-wrapper-item-number purple">4</div>
 						<div class="pluses-wrapper-item-text">Заказ клининговых услуг прямо на сайте</div>
 					</div>
 					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number">5</div>
+						<div class="pluses-wrapper-item-number blue">5</div>
 						<div class="pluses-wrapper-item-text">Работа в круглосуточном режиме</div>
 					</div>
 					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number">6</div>
+						<div class="pluses-wrapper-item-number pink">6</div>
 						<div class="pluses-wrapper-item-text">Безопасные и эффективные чистящие средства</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<section class="section features">
-		<div class="container">
-			<h2 class="section-title">Выбирайте нас</h2>
-			<div class="features-wrapper">
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/price.svg" class="features-card__image">
-					<div class="features-card__title">
-						Конкурентоспособные цены</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/material.svg" class="features-card__image">
-					<div class="features-card__title">
-						Профессиональные чистящие средства</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/vacuum.svg" class="features-card__image">
-					<div class="features-card__title">
-						Специализированное оборудование</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/client.svg" class="features-card__image">
-					<div class="features-card__title">
-						Клиентоориентированность</div>
-					</img>
-				</div>
-			</div>
 	</section>
 
 	<section class="section">

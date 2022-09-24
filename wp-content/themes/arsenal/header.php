@@ -32,7 +32,7 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 			<div class="popup form-popup">
 				<div class="popup-close"></div>
 				<div class="form-wrapper">
-					<h2 class="form-title">Оставить заявку</h2>
+					<h2 class="form-title">Бесплатная консультация и расчет стоимости уборки</h2>
 					<div class="form-content">
 						<?php echo do_shortcode('[contact-form-7 id="125" title="Contact form 2"]'); ?>
 					</div>

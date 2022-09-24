@@ -3,28 +3,63 @@
 .pluses {
   &-wrapper {
     display: flex;
-    justify-content: space-evenly;
-    &-item {
-      margin-top: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-line {
+      margin-top: 30px;
       display: flex;
-      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    &-item {
+      width: 28%;
+
+      .red {
+        background: linear-gradient(92.64deg, #CF4140 0%, #EA4A49 97.59%);
+      }
+
+      .orange {
+        background: linear-gradient(92.64deg, #FF8521 0%, #F9B233 97.59%);
+      }
+
+      .green {
+        background: linear-gradient(92.64deg, #63E144 0%, #37985E 96.57%);
+      }
+
+      .purple {
+        background: linear-gradient(66.51deg, #9A77FD 0%, #4607F9 91.4%);
+      }
+
+      .blue {
+        background: linear-gradient(92.64deg, #52C2F2 0%, #0682B7 97.59%);
+      }
+
+      .pink {
+        background: linear-gradient(66.51deg, #F5A4D5 0%, #FF2FAD 91.4%);
+      }
 
       &-number {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 10px;
         color: #fff;
-        font-size: 46px;
+        font-size: 42px;
         font-weight: 600;
+        line-height: 1;
       }
 
       &-title {
-        color: #fff;
+        color: vars.$color-main;
+        margin-top: 10px;
         font-size: 22px;
         font-weight: 600;
       }
 
       &-text {
-        margin-left: 20px;
-        font-size: 18px;
-        color: #fff;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #000;
       }
     }
   }
