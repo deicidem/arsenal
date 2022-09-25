@@ -29,7 +29,6 @@ get_header();
 		<div class="container">
 			<h2 class="section-title"><?php the_title() ?></h2>
 			<?php the_content() ?>
-			<button class="button button-order">Заказать</button>
 		</div>
 	</section>
 </article><!-- #post-<?php the_ID(); ?> -->
