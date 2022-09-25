@@ -75,6 +75,20 @@
   &:visited {
     color: #fff;
   }
+  a {
+    color: inherit;
+    background-color: none;
+    border-radius: none;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    word-break: break-word;
+    background: none;
+  }
 }
 
 .wp-block-table {
