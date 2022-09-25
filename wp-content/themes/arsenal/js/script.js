@@ -1,9 +1,16 @@
 ( function( $ ) {
   $('.header-branding-search').click( () => {
     $('.overlay').show();
+    $('#call-form').show();
+  });
+  $('.button-order').click( () => {
+    $('.overlay').show();
+    $('#order-form').show();
   });
   $('.popup-close').click(() => {
     $('.overlay').hide();
+    $('#order-form').hide();
+    $('#call-form').hide();
   })
 	$('.reviews-wrapper').slick({
     prevArrow: '<button type="button" class="slider-arrow slider-arrow-prev"></button>',

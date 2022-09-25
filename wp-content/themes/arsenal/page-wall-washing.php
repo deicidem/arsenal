@@ -17,6 +17,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
+<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
 	<section class="section">
 		<div class="container">
 			<div class="main-blue-card">
@@ -29,20 +30,27 @@ get_header();
 			</div>
 		</div>
 	</section>
-
 	<?php
 	while (have_posts()) :
 		the_post();
 
-		get_template_part('template-parts/content', 'page');
+		?>
 
-		// If comments are open or we have at least one comment, load up the comment template.
-		if (comments_open() || get_comments_number()) :
-			comments_template();
-		endif;
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section class="section page-section">
+		<div class="container">
+			<h2 class="section-title"><?php the_title() ?></h2>
+			<?php the_content() ?>
+			<button class="button button-order">Заказать</button>
+		</div>
+	</section>
+</article><!-- #post-<?php the_ID(); ?> -->
 
+
+		<?php
 	endwhile; // End of the loop.
 	?>
+
 
 	<section class="section">
 		<div class="container">

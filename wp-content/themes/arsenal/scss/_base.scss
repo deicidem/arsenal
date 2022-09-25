@@ -3,7 +3,12 @@
 * {
   box-sizing: border-box;
 }
-
+.breadcrumb-container {
+  ul, ol {
+    margin-left: 0;
+    padding: 0;
+  }
+}
 .site-main {
   margin-top: 80px;
 }
@@ -51,8 +56,10 @@
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  line-height: 1.5;
 
   &:hover {
+    cursor: pointer;
     color: #fff;
     background-position: 100% 0;
     -moz-transition: all .4s ease-in-out;

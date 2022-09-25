@@ -29,12 +29,21 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'arsenal'); ?></a>
 
 		<div class="overlay">
-			<div class="popup form-popup">
+			<div class="popup form-popup" id="call-form">
 				<div class="popup-close"></div>
 				<div class="form-wrapper">
 					<h2 class="form-title">Бесплатная консультация и расчет стоимости уборки</h2>
 					<div class="form-content">
 						<?php echo do_shortcode('[contact-form-7 id="125" title="Contact form 2"]'); ?>
+					</div>
+				</div>
+			</div>
+			<div class="popup form-popup" id="order-form">
+				<div class="popup-close"></div>
+				<div class="form-wrapper">
+					<h2 class="form-title">Заказать услугу</h2>
+					<div class="form-content">
+						<?php echo do_shortcode('[contact-form-7 id="124" title="Contact form 1"]'); ?>
 					</div>
 				</div>
 			</div>

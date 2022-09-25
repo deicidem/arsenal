@@ -18,6 +18,7 @@ get_header();
 
 
 <main id="primary" class="site-main">
+<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
 <section class="section services">
 	<div class="container">
 		<h2 class="section-title">Услуги</h2>

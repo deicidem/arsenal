@@ -16,6 +16,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+	<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
 		<?php
 		while ( have_posts() ) :
 			the_post();

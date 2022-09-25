@@ -24,7 +24,7 @@ get_header();
 				<div class="main-wrapper">
 					<div class="main-title">Доверьтесь профессионалам!</div>
 					<div class="main-subtitle">Профессиональные клининговые услуги в Москве и ближайшем Подмосковье</div>
-					<a href="#" class="button">Обратный звонок</a>
+					<button href="#" class="button">Обратный звонок</button>
 				</div>
 				<div class="main-img">
 					<img src="<?php echo get_template_directory_uri() ?>/img/main.png" alt="ARSENAL Cleaning">

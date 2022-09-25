@@ -64,13 +64,16 @@
     }
 
   }
-
+  &-popup {
+    display: none;
+  }
   &-title {
     text-align: center;
     font-size: 36px;
     margin: 0;
     margin-bottom: 30px;
     line-height: 1.2;
+    color: #fff;
     &-blue {
       text-align: left;
       color: vars.$color-main-light;

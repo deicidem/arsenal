@@ -14,6 +14,7 @@
 
 <footer id="colophon" class="section footer site-footer">
 	<div class="container">
+		
 		<div class="footer-wrapper">
 			<div class="footer-block">
 				<div class="footer-block__title">Телефон</div>
@@ -35,7 +36,12 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="footer-wrapper-privacy">
+		<div class="footer-image">
+	<img  src="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" alt="ARSENAL Cleaning">
+
+		</div>
 			© 2020, Клининговая компания «ARSENAL Cleaning» <a href="">Политика конфиденциальности</a>
 		</div>
 	</div>

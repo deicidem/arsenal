@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.breadcrumb-container ul, .breadcrumb-container ol {
+  margin-left: 0;
+  padding: 0;
+}
+
 .site-main {
   margin-top: 80px;
 }
@@ -42,11 +47,19 @@
   padding: 5px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   background-size: 300% 100%;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  line-height: 1.5;
 }
 .button:hover {
+  cursor: pointer;
   color: #fff;
   background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .button:focus {
@@ -309,12 +322,11 @@
   flex-wrap: wrap;
 }
 .features-card {
-  padding: 0px 15px;
+  padding: 0px 30px;
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
 }
 .features-card__image {
   margin-bottom: 10px;
@@ -322,8 +334,10 @@
 .features-card__title {
   font-size: 20px;
   color: #686868;
-  max-width: 80%;
   text-align: center;
+}
+.features-card_large {
+  width: 33%;
 }
 
 .reviews-wrapper {
@@ -511,16 +525,22 @@
   color: #fff;
 }
 
-.page .wp-block-media-text {
+.page-section {
+  font-size: 20px;
+}
+.page-section h1, .page-section h2, .page-section h3, .page-section h4, .page-section h5, .page-section h6 {
+  color: #128DC2;
+}
+.page-section .wp-block-media-text {
   position: relative;
   display: block;
 }
-.page .wp-block-media-text__content {
+.page-section .wp-block-media-text__content {
   width: 65%;
   font-size: 20px;
   padding: 0;
 }
-.page .wp-block-media-text__media {
+.page-section .wp-block-media-text__media {
   position: absolute;
   right: 40px;
   top: 50%;
@@ -531,24 +551,24 @@
   height: 150%;
   text-align: center;
 }
-.page .wp-block-media-text__media img {
+.page-section .wp-block-media-text__media img {
   width: auto;
   height: 100%;
 }
-.page .wp-block-table tr {
+.page-section .wp-block-table tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.page .wp-block-table tr td {
+.page-section .wp-block-table tr td {
   padding: 5px;
 }
-.page .wp-block-table tr:first-child {
+.page-section .wp-block-table tr:first-child {
   border-bottom: 2px solid #128DC2;
 }
-.page .wp-block-table tr:first-child td {
+.page-section .wp-block-table tr:first-child td {
   font-weight: 700;
   color: #128DC2;
 }
-.page .wp-block-table tr:last-child {
+.page-section .wp-block-table tr:last-child {
   border-bottom: none;
 }
 
@@ -610,12 +630,16 @@
   display: none;
   color: #fff;
 }
+.form-popup {
+  display: none;
+}
 .form-title {
   text-align: center;
   font-size: 36px;
   margin: 0;
   margin-bottom: 30px;
   line-height: 1.2;
+  color: #fff;
 }
 .form-title-blue {
   text-align: left;
@@ -664,6 +688,11 @@
 
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.footer-image {
+  text-align: center;
+  padding: 10px 0;
 }
 .footer-wrapper {
   display: flex;

@@ -1,6 +1,10 @@
 @use "variables" as vars;
 
-.page {
+.page-section {
+  font-size: 20px;
+  h1, h2, h3, h4, h5, h6 {
+    color: vars.$color-main;
+  }
   .wp-block-media-text {
     position: relative;
     display: block;

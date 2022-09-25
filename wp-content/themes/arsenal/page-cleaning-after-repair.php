@@ -16,6 +16,7 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
+<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
 	<section class="section">
 		<div class="container">
 			<div class="main-blue-card">
@@ -33,19 +34,19 @@ get_header();
 		<div class="container">
 			<h2 class="section-title">Выбирайте нас</h2>
 			<div class="features-wrapper">
-				<div class="features-card">
+				<div class="features-card features-card_large">
 					<img src="<?php echo get_template_directory_uri() ?>/img/clock.svg" class="features-card__image">
 					<div class="features-card__title">
 						Круглосуточное обслуживание заказчиков</div>
 					</img>
 				</div>
-				<div class="features-card">
+				<div class="features-card features-card_large">
 					<img src="<?php echo get_template_directory_uri() ?>/img/material.svg" class="features-card__image">
 					<div class="features-card__title">
 						Использование безопасной клининговой химии</div>
 					</img>
 				</div>
-				<div class="features-card">
+				<div class="features-card features-card_large">
 					<img src="<?php echo get_template_directory_uri() ?>/img/sale.svg" class="features-card__image">
 					<div class="features-card__title">
 						Скидки на услуги для постоянных клиентов</div>
@@ -58,13 +59,20 @@ get_header();
 	while (have_posts()) :
 		the_post();
 
-		get_template_part('template-parts/content', 'page');
+		?>
 
-		// If comments are open or we have at least one comment, load up the comment template.
-		if (comments_open() || get_comments_number()) :
-			comments_template();
-		endif;
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section class="section page-section">
+		<div class="container">
+			<h2 class="section-title"><?php the_title() ?></h2>
+			<?php the_content() ?>
+			<button class="button button-order">Заказать</button>
+		</div>
+	</section>
+</article><!-- #post-<?php the_ID(); ?> -->
 
+
+		<?php
 	endwhile; // End of the loop.
 	?>
 
