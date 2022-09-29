@@ -32,6 +32,41 @@ get_header();
 	endwhile; // End of the loop.
 	?>
 
+	
+<section class="section certificates">
+		<div class="container">
+			<h2 class="section-title">Сертификаты</h2>
+			<div class="certificates-wrapper">
+			<?php
+				$my_posts = get_posts(array(
+					'numberposts' => 5,
+					'category_name'    => 'certificates',
+					'orderby'     => 'date',
+					'order'       => 'DESC',
+					'include'     => array(),
+					'exclude'     => array(),
+					
+					'meta_key'    => '',
+					'meta_value'  => '',
+					'post_type'   => 'post',
+					'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+				));
+
+				global $post;
+
+				foreach ($my_posts as $post) {
+					setup_postdata($post);
+				?>
+				 <img src="<?php the_post_thumbnail_url()?>" class="certificates-item">
+				<?php
+				}
+
+				wp_reset_postdata(); // сброс
+				?>
+			</div>
+		</div>
+	</section>
+
 	<section class="section section_blue">
 		<div class="container">
 			<h2 class="section-title">Реквизиты:</h2>
@@ -60,6 +95,8 @@ get_header();
 			</div>
 		</div>
 	</section>
+
+	
 </main><!-- #main -->
 
 <?php

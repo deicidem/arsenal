@@ -258,11 +258,12 @@ get_header();
 				<?php
 				$my_posts = get_posts(array(
 					'numberposts' => 5,
-					'category'    => 0,
+					'category_name'    => 'reviews',
 					'orderby'     => 'date',
 					'order'       => 'DESC',
 					'include'     => array(),
 					'exclude'     => array(),
+					
 					'meta_key'    => '',
 					'meta_value'  => '',
 					'post_type'   => 'post',

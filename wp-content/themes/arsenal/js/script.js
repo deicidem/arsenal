@@ -16,4 +16,9 @@
     prevArrow: '<button type="button" class="slider-arrow slider-arrow-prev"></button>',
     nextArrow: '<button type="button" class="slider-arrow slider-arrow-next"></button>',
   });
+  $('.certificates-wrapper').slick({
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slider-arrow slider-arrow-prev"></button>',
+    nextArrow: '<button type="button" class="slider-arrow slider-arrow-next"></button>',
+  });
 }( jQuery ) );

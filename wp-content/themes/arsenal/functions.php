@@ -8,6 +8,8 @@
  * @package arsenal
  */
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
 	define('_S_VERSION', '1.0.0');
@@ -158,6 +160,27 @@ function arsenal_scripts()
 	}
 }
 add_action('wp_enqueue_scripts', 'arsenal_scripts');
+
+function cf7_setup_phpmailer_init( PHPMailer $phpmailer ) {
+	// Хост почтового сервера
+	$phpmailer->Host = 'smtp.gmail.com';
+	// Номер порта 
+	$phpmailer->Port = 465;
+	// Имя пользователя для SMTP авторизации 
+	$phpmailer->Username = 'kronosdidi@gmail.com';
+	// Пароль пользователя для SMTP авторизации 
+	$phpmailer->Password = 'edjgmiqiazmjdafn'; 
+	// Включение/отключение шифрования
+	$phpmailer->SMTPAuth = true; 
+	// Тип шифиования (ssl или tls)
+	$phpmailer->SMTPSecure = 'ssl'; 
+	// Обратный Email
+	$phpmailer->From = 'kronosdidi@gmail.com'; 
+	// Название сайта в поле От
+	$phpmailer->FromName = get_bloginfo( 'name' ); 
+	$phpmailer->IsSMTP();
+}
+add_action( 'phpmailer_init', 'cf7_setup_phpmailer_init' );
 
 /**
  * Implement the Custom Header feature.
