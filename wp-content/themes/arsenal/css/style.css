@@ -12,7 +12,7 @@
 }
 
 .section {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 .section-title {
   font-size: 36px;
@@ -26,6 +26,9 @@
 }
 .section_blue .section-title {
   color: #fff;
+}
+.section-noPaddingTop {
+  padding-top: 0;
 }
 
 .container {

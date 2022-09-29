@@ -17,92 +17,167 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
-	<section class="section">
-		<div class="container">
-			<div class="main-blue-card">
-				<div class="main-blue-card__title">
-					Мытье окон в Москве
-				</div>
-				<div class="main-blue-card__info">
-					Требуется мытье окон в Москве от профессионалов? Воспользуйтесь услугами ARSENAL Cleaning! Опытные клинеры вымоют стекла до зеркального блеска и тщательно очистят от пыли и грязи рамы вместе с подоконниками. На это у специалистов уйдут считанные часы, поскольку уборка пройдет с использованием современной клининговой техники и безопасных чистящих средств.
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<?php
 	while (have_posts()) :
 		the_post();
 
-		?>
+	?>
+		<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
+		<section class="section">
+			<div class="container">
+				<div class="main-blue-card">
+					<div class="main-blue-card__title">
+						Мытье окон в Москве
+					</div>
+					<div class="main-blue-card__info">
+						Требуется мытье окон в Москве от профессионалов? Воспользуйтесь услугами ARSENAL Cleaning! Опытные клинеры вымоют стекла до зеркального блеска и тщательно очистят от пыли и грязи рамы вместе с подоконниками. На это у специалистов уйдут считанные часы, поскольку уборка пройдет с использованием современной клининговой техники и безопасных чистящих средств.
+					</div>
+				</div>
+			</div>
+		</section>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<section class="section page-section">
-		<div class="container">
-			<h2 class="section-title"><?php the_title() ?></h2>
-			<?php the_content() ?>
-		</div>
-	</section>
-</article><!-- #post-<?php the_ID(); ?> -->
+		<section class="section services">
+			<div class="container">
+				<h2 class="section-title">Услуги</h2>
+				<div class="services-cards">
+					<?php
+					global $post;
+					// параметры по умолчанию
+					$children = get_children([
+						'post_parent' => get_the_ID(),
+						'post_type' => 'page'
+					]);
+
+					foreach ($children as $post) {
+						setup_postdata($post);
+					?>
+						<a href="<?php the_permalink(); ?>" class="services-card">
+							<div class="services-card__img">
+								<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+							</div>
+
+							<div class="services-card__content">
+								<div class="services-card__title"><?php the_title(); ?></div>
+							</div>
+						</a>
+					<?php
+					}
+					wp_reset_postdata();
+					?>
+				</div>
+			</div>
+		</section>
+
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<section class="section page-section">
+				<div class="container">
+					<h2 class="section-title"><?php the_title() ?></h2>
+					<?php the_content() ?>
+				</div>
+			</section>
+		</article><!-- #post-<?php the_ID(); ?> -->
 
 
-		<?php
+		<section class="section">
+			<div class="container">
+				<h2 class="section-title">Мойка окон выглядит следующим образом:</h2>
+				<div class="pluses-wrapper">
+					<div class="pluses-wrapper-line">
+						<div class="pluses-wrapper-item">
+							<div class="pluses-wrapper-item-number red">1</div>
+							<div class="pluses-wrapper-item-title">Предварительная оценка</div>
+							<div class="pluses-wrapper-item-text">Когда клинеры приезжают к клиенту, то первым делом изучают особенности объекта, с которыми предстоит работать. На основании этого намечается план дальнейших действий.</div>
+						</div>
+						<div class="pluses-wrapper-item">
+							<div class="pluses-wrapper-item-number orange">2</div>
+							<div class="pluses-wrapper-item-title">Подготовительные мероприятия</div>
+							<div class="pluses-wrapper-item-text">При необходимости с окон убираются наклейки и скотч. Рамы, стекла, жалюзи и уплотнители очищаются от скопившейся на поверхности грязи и пыли. Шторы снимаются или закрепляются, чтобы не мешали.</div>
+						</div>
+						<div class="pluses-wrapper-item">
+							<div class="pluses-wrapper-item-number green">3</div>
+							<div class="pluses-wrapper-item-title">Очистка стеклянных поверхностей</div>
+							<div class="pluses-wrapper-item-text">Мытье оконных стекол производится в заданной последовательности – от верхней части с постепенным смещением вниз. В этих целях применяется экологически чистая клининговая химия.</div>
+						</div>
+					</div>
+					<div class="pluses-wrapper-line">
+						<div class="pluses-wrapper-item">
+							<div class="pluses-wrapper-item-number purple">4</div>
+							<div class="pluses-wrapper-item-title">Мойка жалюзи и подоконника</div>
+							<div class="pluses-wrapper-item-text">Горизонтальная внутренняя часть окон моется обязательно. Поскольку системы регулировки освещения имеют хорошую защиту от пыли или грязи, чистка производится с заданной периодичностью. К примеру, 1 раз в месяц.</div>
+						</div>
+						<div class="pluses-wrapper-item">
+							<div class="pluses-wrapper-item-number blue">5</div>
+							<div class="pluses-wrapper-item-title">Наведение блеска</div>
+							<div class="pluses-wrapper-item-text">Окна считаются чисто вымытыми, если стекла сверкают образцовой чистотой. Чтобы добиться подобающего эффекта, используются специальные скребки или щетки, которые надежно вычищают стеклянные поверхности от загрязнений.</div>
+						</div>
+						<div class="pluses-wrapper-item">
+							<div class="pluses-wrapper-item-number pink">6</div>
+							<div class="pluses-wrapper-item-title">Протирка насухо</div>
+							<div class="pluses-wrapper-item-text">В самом конце с рам и стекол полностью удаляется влага. Когда клинеры оканчивают работу над последним окном, объект сдается заказчику. Специалисты собирают оборудование вместе с чистящими средствами и уезжают.</div>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="main-blue-card">
+					<div class="main-blue-card__title">
+						Методы и способы мойки окон в Москве
+					</div>
+					<div class="main-blue-card__info">
+						Мойка окон и витражей делится на внутреннюю и наружную. Когда клинеры работают в помещениях, спецтехника вроде автомобильных вышек не привлекается. Специалисты находятся в комнатах и оттуда производят необходимые действия. Повышенные меры безопасности соблюдаются при вымывании внешних частей оконных конструкций. Особенно на балконах или лоджиях.<br><br>
+						Наружное мытье осуществляется 3 основными способами – на лестнице, автомобильной вышке или в подвешенной к крыше люльке. Если ни один из перечисленных методов не подходит, привлекаются так называемые «промышленные альпинисты». Для перемещения по фасаду используются лебедки, тросы, крюки и другое снаряжение, которое применяется покорителями горных вершин.
+					</div>
+				</div>
+			</div>
+		</section>
+	<?php
 	endwhile; // End of the loop.
 	?>
-
 	<section class="section">
 		<div class="container">
-			<h2 class="section-title">Мойка окон выглядит следующим образом:</h2>
-			<div class="pluses-wrapper">
-				<div class="pluses-wrapper-line">
-					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number red">1</div>
-						<div class="pluses-wrapper-item-title">Предварительная оценка</div>
-						<div class="pluses-wrapper-item-text">Когда клинеры приезжают к клиенту, то первым делом изучают особенности объекта, с которыми предстоит работать. На основании этого намечается план дальнейших действий.</div>
-					</div>
-					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number orange">2</div>
-						<div class="pluses-wrapper-item-title">Подготовительные мероприятия</div>
-						<div class="pluses-wrapper-item-text">При необходимости с окон убираются наклейки и скотч. Рамы, стекла, жалюзи и уплотнители очищаются от скопившейся на поверхности грязи и пыли. Шторы снимаются или закрепляются, чтобы не мешали.</div>
-					</div>
-					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number green">3</div>
-						<div class="pluses-wrapper-item-title">Очистка стеклянных поверхностей</div>
-						<div class="pluses-wrapper-item-text">Мытье оконных стекол производится в заданной последовательности – от верхней части с постепенным смещением вниз. В этих целях применяется экологически чистая клининговая химия.</div>
+			<div class="form">
+				<div class="form-wrapper">
+					<h2 class="form-title">Оставить заявку</h2>
+					<div class="form-content">
+						<?php echo do_shortcode('[contact-form-7 id="124" title="Contact form 1"]'); ?>
 					</div>
 				</div>
-				<div class="pluses-wrapper-line">
-					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number purple">4</div>
-						<div class="pluses-wrapper-item-title">Мойка жалюзи и подоконника</div>
-						<div class="pluses-wrapper-item-text">Горизонтальная внутренняя часть окон моется обязательно. Поскольку системы регулировки освещения имеют хорошую защиту от пыли или грязи, чистка производится с заданной периодичностью. К примеру, 1 раз в месяц.</div>
+				<div class="form-right">
+					<h2 class="form-title form-title-blue">Контакты</h2>
+
+					<div class="form-right-wrapper">
+						<div class="form-right-wrapper-main">Если ищете исполнителя для <strong>регулярной</strong> профессиональной уборки коммерческих объектов – <strong>выгодно</strong> заключить договор!
+							Подписавшим соглашение клиентам дается <strong>скидка 30 % </strong>на мытье витрин.</div>
+						<div class="form-right-wrapper-text">
+							<div class="forn-right-subtitle"><strong>График работы</strong></div>
+							<div class="forn-right-subtitle">офиса: 10.00 - 19.00</div>
+							<div class="forn-right-subtitle">cотрудников: круглосуточно</div>
+						</div>
+						<div class="form-right-wrapper-text">
+							<div class="forn-right-subtitle"><strong>+7 (495) 625-15-80</strong></div>
+							<div class="forn-right-subtitle"><strong>+7 (495) 790-20-22</strong></div>
+						</div>
+						<div class="form-right-wrapper-text">
+							<div class="forn-right-subtitle"><strong>Электронная почта:</strong></div>
+							<div class="forn-right-subtitle">citi@citicleaning.ru</div>
+						</div>
+						<div class="form-right-wrapper-text">
+							<div class="form-right-link">
+								<img src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="">
+								<img src="<?php echo get_template_directory_uri() ?>/img/vk.svg" alt="">
+							</div>
+						</div>
 					</div>
-					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number blue">5</div>
-						<div class="pluses-wrapper-item-title">Наведение блеска</div>
-						<div class="pluses-wrapper-item-text">Окна считаются чисто вымытыми, если стекла сверкают образцовой чистотой. Чтобы добиться подобающего эффекта, используются специальные скребки или щетки, которые надежно вычищают стеклянные поверхности от загрязнений.</div>
-					</div>
-					<div class="pluses-wrapper-item">
-						<div class="pluses-wrapper-item-number pink">6</div>
-						<div class="pluses-wrapper-item-title">Протирка насухо</div>
-						<div class="pluses-wrapper-item-text">В самом конце с рам и стекол полностью удаляется влага. Когда клинеры оканчивают работу над последним окном, объект сдается заказчику. Специалисты собирают оборудование вместе с чистящими средствами и уезжают.</div>
+
+					<div class="form-right-img">
+						<img src="<?php echo get_template_directory_uri() ?>/img/form-img.png" alt="">
 					</div>
 				</div>
 			</div>
-	</section>
-
-	<section class="section">
-		<div class="container">
-			<div class="main-blue-card">
-				<div class="main-blue-card__title">
-					Методы и способы мойки окон в Москве
-				</div>
-				<div class="main-blue-card__info">
-					Мойка окон и витражей делится на внутреннюю и наружную. Когда клинеры работают в помещениях, спецтехника вроде автомобильных вышек не привлекается. Специалисты находятся в комнатах и оттуда производят необходимые действия. Повышенные меры безопасности соблюдаются при вымывании внешних частей оконных конструкций. Особенно на балконах или лоджиях.<br><br>
-					Наружное мытье осуществляется 3 основными способами – на лестнице, автомобильной вышке или в подвешенной к крыше люльке. Если ни один из перечисленных методов не подходит, привлекаются так называемые «промышленные альпинисты». Для перемещения по фасаду используются лебедки, тросы, крюки и другое снаряжение, которое применяется покорителями горных вершин.
-				</div>
-			</div>
+		</div>
+		</div>
 		</div>
 	</section>
 </main><!-- #main -->
