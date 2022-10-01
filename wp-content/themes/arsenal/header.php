@@ -19,7 +19,9 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -67,7 +69,7 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 				</div>
 
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'arsenal'); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span></span></button>
 					<?php
 					wp_nav_menu(
 						array(

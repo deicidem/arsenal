@@ -25,11 +25,12 @@ get_header();
 				<?php
 				$my_posts = get_posts(array(
 					'numberposts' => 5,
-					'category'    => 0,
+					'category_name'    => 'reviews',
 					'orderby'     => 'date',
 					'order'       => 'DESC',
 					'include'     => array(),
 					'exclude'     => array(),
+					
 					'meta_key'    => '',
 					'meta_value'  => '',
 					'post_type'   => 'post',
@@ -72,85 +73,7 @@ get_header();
 
 				wp_reset_postdata(); // сброс
 				?>
-				<div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card-star-wrapper">
-							<div class="reviews-card-star">
-								<img src="<?php echo get_template_directory_uri() ?>/img/star-filled.svg" alt="">
-								<img src="<?php echo get_template_directory_uri() ?>/img/star-filled.svg" alt="">
-								<img src="<?php echo get_template_directory_uri() ?>/img/star-filled.svg" alt="">
-								<img src="<?php echo get_template_directory_uri() ?>/img/star-filled.svg" alt="">
-								<img src="<?php echo get_template_directory_uri() ?>/img/star-filled.svg" alt="">
-							</div>
-						</div>
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div>
-				<div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div>
-				<div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div>
-				<div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div>
-				<div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div>
-				<div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div>
-				<div class="reviews-card__wrapper">
-					<div class="reviews-card">
-						<div class="reviews-card__header">
-							<div class="reviews-card__title">Анна</div>
-							<div class="reviews-card__rate"></div>
-						</div>
-						<div class="reviews-card__line"></div>
-						<div class="reviews-card__text">У Марины это был первый заказ уборки. Немного волновалась. Уверенности и опыта нужно набираться. В целом уборкой доволен. Спасибо</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</section>

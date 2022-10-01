@@ -27,7 +27,7 @@
 			</div>
 			<div class="footer-block">
 				<div class="footer-block__title">Почта</div>
-				<div class="footer-block-item" href="mail:citi@citicleaning.ru">citi@citicleaning.ru</div>
+				<a class="footer-block-item" href="mail:citi@citicleaning.ru">citi@citicleaning.ru</a>
 			</div>
 			<div class="footer-block">
 				<div class="footer-block-item">

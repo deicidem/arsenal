@@ -41,11 +41,24 @@
       background: #fff;
     }
   }
-
   &-wrapper .wpcf7-spinner {
-    display: none;
+    background: #fff !important;
+    opacity: 1 !important;
+    display: none !important;
+    margin: 10px auto !important;
+    &::before {
+      background: vars.$color-main !important;
+    }
   }
-
+  &-wrapper form.submitting .wpcf7-spinner {
+    display: block !important;
+  }
+  &-wrapper .wpcf7-response-output {
+    margin: 20px 0 0 !important;
+    border-color: #fff !important;
+    border-radius: 10px;
+    color: #fff !important;
+  }
   &-label {
     display: block;
     margin-bottom: 20px;
@@ -59,7 +72,6 @@
     }
 
     .wpcf7-not-valid-tip {
-      display: none;
       color: #fff;
     }
 
@@ -69,7 +81,7 @@
   }
   &-title {
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     margin: 0;
     margin-bottom: 30px;
     line-height: 1.2;
