@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The template for displaying all pages
  *
@@ -15,13 +14,14 @@
 
 get_header();
 ?>
+
 <main id="primary" class="site-main">
 	<?php
 	while (have_posts()) :
 		the_post();
-
 	?>
 		<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
+
 		<section class="section">
 			<div class="container">
 				<div class="main-blue-card">
@@ -67,7 +67,6 @@ get_header();
 			</div>
 		</section>
 
-
 		<section class="section features">
 			<div class="container">
 				<h2 class="section-title">Выбирайте нас</h2>
@@ -93,8 +92,6 @@ get_header();
 				</div>
 		</section>
 
-
-
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<section class="section page-section">
 				<div class="container">
@@ -104,7 +101,6 @@ get_header();
 			</section>
 		</article><!-- #post-<?php the_ID(); ?> -->
 
-
 		<section class="section">
 			<div class="container">
 				<h2 class="section-title">Клининг по шагам</h2>
@@ -112,29 +108,29 @@ get_header();
 					<div class="pluses-wrapper-line">
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number red">1</div>
-							<div class="pluses-wrapper-item-text">Профессиональная уборка после ремонта начинается с анализа объекта и оценки фронта работ. Клинеры осматривают помещения, изучают виды загрязнений, подбирают подходящие составы и продумывают план мероприятий. Когда подготовка завершается, специалисты переходят к работе.</div>
+							<div class="pluses-wrapper-item-text">Анализ объекта и оценка фронта работ.</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number orange">2</div>
-							<div class="pluses-wrapper-item-text">В первую очередь собирается крупный строительный мусор вроде кусков линолеума или обоев. Мелкие и сыпучие отходы сметаются в кучи и укладываются в мешки. Последние выносятся за пределы объекта к местам, где стоят контейнеры, содержимое которых регулярно вывозится на свалку.</div>
+							<div class="pluses-wrapper-item-text">Сборка крупного строительного мусора и  мелких и сыпучих отходов.</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number green">3</div>
-							<div class="pluses-wrapper-item-text">Далее клинеры переходят к удалению пыли на потолках, стенках и полах. Одновременно удаляются загрязнения наподобие пятен или прилипших к различным поверхностям комков штукатурки и отделочных растворов. Для обеспыливания помещений используются специальные пылесосы высокой мощности.</div>
+							<div class="pluses-wrapper-item-text">Удаление пыли на потолках, стенках и полах.</div>
 						</div>
 					</div>
 					<div class="pluses-wrapper-line">
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number purple">4</div>
-							<div class="pluses-wrapper-item-text">Если действия строителей приводят к загрязнению предметов обстановки, уборка после стройки и ремонта сопровождается чисткой мебели. Потребность в услуге возникает при ремонтных работах в отдельных помещениях. Из-за отсутствия защиты пыль проникает в остальные комнаты и пачкает шкафы, столы, кресла, диваны и пр.</div>
+							<div class="pluses-wrapper-item-text">Уборка сопровождается чисткой мебели при необходимости.</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number blue">5</div>
-							<div class="pluses-wrapper-item-text">Когда помещения полностью убраны, переходят к мойке оконных конструкций. Подоконники, рамы и стеклопакеты часто очищаются пылесосами еще на этапе работы с полами, стенами и потолками. Однако мытье оставляется на самый конец, чтобы из помещений не неслась пыль и не садилась на стекла.</div>
+							<div class="pluses-wrapper-item-text">Когда помещения полностью убраны, переходят к мойке оконных конструкций.</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number pink">6</div>
-							<div class="pluses-wrapper-item-text">Мытье наружных частей зданий и уборка прилегающей территории осуществляется по необходимости. Для мойки фасадов применяется ручной труд или спецтехника. Зависит от ситуации. Аналогично обстоит дело с дорожками, детскими площадками, фонтанами, лестницами и прочими объектами, которые располагаются на улице.</div>
+							<div class="pluses-wrapper-item-text">Мытье наружных частей зданий и уборка прилегающей территории.</div>
 						</div>
 					</div>
 				</div>
@@ -143,6 +139,7 @@ get_header();
 	<?php
 	endwhile; // End of the loop.
 	?>
+
 	<section class="section">
 		<div class="container">
 			<div class="form">

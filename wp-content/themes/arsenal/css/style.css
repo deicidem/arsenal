@@ -14,9 +14,24 @@ body {
   padding-top: 130px;
 }
 
-.breadcrumb-container ul, .breadcrumb-container ol {
+.breadcrumb-container ul,
+.breadcrumb-container ol {
   margin-left: 0;
   padding: 0;
+}
+
+ul,
+ol {
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin: 14px 0;
 }
 
 .slider-arrow {
@@ -58,8 +73,12 @@ body {
   transform-origin: right;
 }
 
+.page-section {
+  padding-bottom: 0 !important;
+}
+
 .section {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 .section-title {
   font-size: 36px;
@@ -88,13 +107,14 @@ body {
 }
 
 .button {
+  margin-top: 10px;
   display: inline-block;
   background-image: linear-gradient(to right, #52C2F2, #0682B7, #52C2F2, #0682B7);
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   text-decoration: none;
-  padding: 5px 30px;
+  padding: 10px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   background-size: 300% 100%;
   -moz-transition: all 0.4s ease-in-out;
@@ -338,13 +358,18 @@ body {
   font-size: 36px;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 .main-blue-card__info {
+  margin: 14px auto 0 auto;
   max-width: 60%;
   font-size: 18px;
   color: #fff;
   text-align: center;
+}
+.main-blue-card__info strong {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .about-wrapper {

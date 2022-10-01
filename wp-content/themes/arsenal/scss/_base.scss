@@ -14,11 +14,28 @@ body {
   padding-top: 130px;
 }
 .breadcrumb-container {
-  ul, ol {
+
+  ul,
+  ol {
     margin-left: 0;
     padding: 0;
   }
 }
+
+ul,
+ol {
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin: 14px 0;
+}
+
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -68,8 +85,12 @@ body {
   }
 }
 
+.page-section {
+  padding-bottom: 0 !important;
+}
+
 .section {
-  padding: 50px 0;
+  padding: 60px 0;
 
   &-title {
     font-size: 36px;
@@ -86,7 +107,8 @@ body {
   &_blue &-title {
     color: #fff;
   }
-  &-noPaddingTop{
+
+  &-noPaddingTop {
     padding-top: 0;
   }
 }
@@ -101,13 +123,14 @@ body {
 }
 
 .button {
+  margin-top: 10px;
   display: inline-block;
   background-image: linear-gradient(to right, vars.$color-main-light, vars.$color-main-dark, vars.$color-main-light, vars.$color-main-dark);
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   text-decoration: none;
-  padding: 5px 30px;
+  padding: 10px 30px;
   box-shadow: 0 2px 4px rgba(#000, 0.15);
   background-size: 300% 100%;
   -moz-transition: all .4s ease-in-out;
@@ -133,6 +156,7 @@ body {
   &:visited {
     color: #fff;
   }
+
   a {
     color: inherit;
     background-color: none;
