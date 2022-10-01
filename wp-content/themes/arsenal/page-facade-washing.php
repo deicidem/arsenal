@@ -17,6 +17,7 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 	<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
+	
 	<section class="section">
 		<div class="container">
 			<div class="main-blue-card">
@@ -24,7 +25,8 @@ get_header();
 					Мойка фасада
 				</div>
 				<div class="main-blue-card__info">
-					Мойка фасада обычно производится 2 раза в год, придает зданию опрятный и ухоженный вид. Мытье – довольно сложный процесс, который отнимает много времени и немало сил, предполагает использование специальных средств. По этой причине для выполнения работ часто привлекаются профессионалы из области клининга.
+					Мойка фасада обычно производится 2 раза в год, придает зданию опрятный и ухоженный вид.
+					Для выполнения работ часто привлекаются профессионалы из области клининга.
 				</div>
 			</div>
 		</div>
@@ -33,7 +35,6 @@ get_header();
 	<?php
 	while (have_posts()) :
 		the_post();
-
 	?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -45,11 +46,9 @@ get_header();
 			</section>
 		</article><!-- #post-<?php the_ID(); ?> -->
 
-
 	<?php
 	endwhile; // End of the loop.
 	?>
-
 
 	<section class="section">
 		<div class="container">
@@ -59,24 +58,24 @@ get_header();
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number red">1</div>
 						<div class="pluses-wrapper-item-title">Оценка работ</div>
-						<div class="pluses-wrapper-item-text">Очистка фасада начинается с осмотра объекта. Клинеры внимательно изучают поверхность наружной части здания и определяют наиболее трудные для мытья места. Плюс разрабатывают план дальнейших действий.</div>
+						<div class="pluses-wrapper-item-text">Очистка фасада начинается с осмотра объекта.</div>
 					</div>
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number orange">2</div>
 						<div class="pluses-wrapper-item-title">Удаление грязи</div>
-						<div class="pluses-wrapper-item-text">Речь идет о крупных и отвердевших загрязнениях, для устранения которых использование клинингового оборудования часто оказывается неэффективным. Гораздо проще очистить поверхность обыкновенными шпателями.</div>
+						<div class="pluses-wrapper-item-text">Речь идет о крупных и отвердевших загрязнениях</div>
 					</div>
 				</div>
 				<div class="pluses-wrapper-line">
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number purple">3</div>
 						<div class="pluses-wrapper-item-title">Мойка</div>
-						<div class="pluses-wrapper-item-text">Мытье фасада проводится водой или моющими средствами. Составы бывают нейтральными, щелочными, кислотными и парфюмированными. Химия подбирается в зависимости от материала отделки.</div>
+						<div class="pluses-wrapper-item-text">Мытье фасада проводится водой или моющими средствами.</div>
 					</div>
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number blue">4</div>
 						<div class="pluses-wrapper-item-title">Сушка</div>
-						<div class="pluses-wrapper-item-text">В этом случае большое значение имеет тип обрабатываемой поверхности. Если обычная штукатурка оставляется сушиться на солнце, то фасады, отделанные плиткой, есть смысл протереть насухо и отполировать.</div>
+						<div class="pluses-wrapper-item-text">Вид сушки выбирается исходя из типа обрабатываемой поверхности.</div>
 					</div>
 				</div>
 			</div>

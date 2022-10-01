@@ -1,5 +1,5 @@
 ( function( $ ) {
-  $('.header-branding-search').click( () => {
+  $('.button-call').click( () => {
     $('.overlay').show();
     $('#call-form').show();
   });
