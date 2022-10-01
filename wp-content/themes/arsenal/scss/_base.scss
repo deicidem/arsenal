@@ -3,6 +3,16 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0px !important;
+}
+.site {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 130px;
+}
 .breadcrumb-container {
   ul, ol {
     margin-left: 0;
@@ -56,9 +66,6 @@
       transform-origin: right;
     }
   }
-}
-.site-main {
-  margin-top: 130px;
 }
 
 .section {
@@ -144,15 +151,9 @@
 
 .wp-block-table {
   margin-top: 60px;
-  td{
-
-  }
   tr{
     font-size:18px;
     margin-bottom: 10px;
-
-    :first-child:after{
-    }
   }
 }
 
