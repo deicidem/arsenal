@@ -17,7 +17,6 @@ get_header();
 ?>
 
 <main id='primary' class='site-main'>
-
 	<div class="section">
 		<div class="container">
 			<div class="main">
@@ -263,7 +262,7 @@ get_header();
 					'order'       => 'DESC',
 					'include'     => array(),
 					'exclude'     => array(),
-					
+
 					'meta_key'    => '',
 					'meta_value'  => '',
 					'post_type'   => 'post',

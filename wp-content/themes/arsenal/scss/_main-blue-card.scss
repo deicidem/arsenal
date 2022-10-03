@@ -1,6 +1,6 @@
 @use 'variables' as vars;
 
-.main-blue-card{
+.main-blue-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   padding: 30px;
   box-shadow: vars.$grey-shadow;
 
-  &__title{
+  &__title {
     text-align: center;
     color: #fff;
     font-size: 36px;
@@ -20,15 +20,29 @@
     margin-bottom: 14px;
   }
 
-  &__info{
+  &__info {
     margin: 14px auto 0 auto;
     max-width: 60%;
     font-size: 18px;
     color: #fff;
     text-align: center;
-    strong{
+
+    strong {
       font-size: 20px;
       font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: vars.$size-xxl) {
+  .main-blue-card {
+    &__title {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    &__info {
+      margin: 10px auto 0 auto;
     }
   }
 }

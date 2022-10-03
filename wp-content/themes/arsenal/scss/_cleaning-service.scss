@@ -1,0 +1,14 @@
+@use "variables" as vars;
+
+.cleaning-service {}
+
+@media (max-width: vars.$size-xxl) {
+  .cleaning-service {
+    p, li{
+      font-size: 18px;
+    }
+    img{
+      height: 80%;
+    }
+  }
+}

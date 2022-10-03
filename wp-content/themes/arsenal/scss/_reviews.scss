@@ -16,10 +16,12 @@
 
     &-star {
       display: flex;
+
       img {
         max-width: 20px;
         padding: 2px;
       }
+
       &-wrapper {
         position: absolute;
         right: 30px;
@@ -51,7 +53,18 @@
     }
 
     &__text {
-      font-size: 22px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: vars.$size-xxl) {
+  .reviews {
+    &-card {
+      padding: 30px 20px;
+      &__text{
+        font-size: 18px;
+      }
     }
   }
 }

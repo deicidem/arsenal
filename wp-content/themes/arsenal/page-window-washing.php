@@ -80,7 +80,7 @@ get_header();
 
 		<section class="section">
 			<div class="container">
-				<h2 class="section-title">Мойка окон выглядит следующим образом:</h2>
+				<h2 class="section-title">Этапы мойки окон:</h2>
 				<div class="pluses-wrapper">
 					<div class="pluses-wrapper-line">
 						<div class="pluses-wrapper-item">
