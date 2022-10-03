@@ -46,7 +46,15 @@
       color: vars.$color-main-light;
     }
   }
+}
 
-  
-
+@media (max-width: vars.$size-xxl) {
+  .services {
+    &-card {
+      padding: 14px;
+      &__title {
+        font-size: 18px;
+      }
+    }
+  }
 }

@@ -64,3 +64,19 @@
     }
   }
 }
+
+@media (max-width: vars.$size-xxl) {
+  .pluses {
+    &-wrapper {
+      &-item {
+        &-text {
+          font-size: 18px;
+        }
+        &-title{
+          font-size: 20px;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}

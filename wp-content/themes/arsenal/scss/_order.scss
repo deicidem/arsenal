@@ -18,3 +18,16 @@
     transform: translate(0, -50%);
   }
 }
+
+@media (max-width: vars.$size-xxl) {
+  .order {
+    &-content {
+      max-width: 60%;
+      font-size: 18px;
+    }
+
+    &-image {
+      max-height: 100%;
+    }
+  }
+}

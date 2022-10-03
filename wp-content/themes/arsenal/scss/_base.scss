@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+
 body {
   margin: 0px !important;
 }
+
 .site {
   min-height: 100vh;
   display: flex;
@@ -14,6 +16,7 @@ body {
   flex-direction: column;
   padding-top: 130px;
 }
+
 .breadcrumb-container {
 
   ul,
@@ -176,8 +179,9 @@ p {
 
 .wp-block-table {
   margin-top: 60px;
-  tr{
-    font-size:18px;
+
+  tr {
+    font-size: 18px;
     margin-bottom: 10px;
   }
 }
@@ -185,6 +189,10 @@ p {
 @media (max-width: vars.$size-xxl) {
   .container {
     max-width: 1140px;
+  }
+
+  .section {
+    padding: 50px 0;
   }
 }
 
