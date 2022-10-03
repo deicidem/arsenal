@@ -52,3 +52,12 @@
     }
   }
 }
+
+@media (max-width: vars.$size-md) {
+  .main {
+    flex-direction: column-reverse;
+    &-wrapper{
+      max-width: 90%;
+    }
+  }
+}

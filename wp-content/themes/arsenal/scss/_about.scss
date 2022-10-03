@@ -52,13 +52,12 @@
       max-height: 100%;
     }
   }
+}
 
-  .wp-block-media-text__media {
-    position: absolute;
-    right: 40px;
-    top: 50%;
-    max-height: 100%;
-    transform: translate(0, -50%);
-    margin: 0;
+@media (max-width: vars.$size-xl) {
+  .about {
+    &-image {
+      max-height: 70%;
+    }
   }
 }

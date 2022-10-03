@@ -4,12 +4,14 @@
   &-wrapper {
     position: relative;
   }
+
   &-content {
     margin-left: auto;
     width: 65%;
     font-size: 20px;
   }
-  &-image{
+
+  &-image {
     position: absolute;
     left: 0;
     margin-right: 40px;
@@ -28,6 +30,14 @@
 
     &-image {
       max-height: 100%;
+    }
+  }
+}
+
+@media (max-width: vars.$size-xl) {
+  .order {
+    &-image {
+      max-height: 60%;
     }
   }
 }

@@ -200,6 +200,11 @@ p {
   .container {
     max-width: 960px;
   }
+  .section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: vars.$size-lg) {

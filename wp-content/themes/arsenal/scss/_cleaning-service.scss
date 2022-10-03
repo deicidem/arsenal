@@ -1,14 +1,45 @@
 @use "variables" as vars;
 
-.cleaning-service {}
-
 @media (max-width: vars.$size-xxl) {
   .cleaning-service {
-    p, li{
+
+    p,
+    li {
       font-size: 18px;
     }
-    img{
+
+    img {
       height: 80%;
+    }
+  }
+}
+
+@media (max-width: vars.$size-xl) {
+  .cleaning-service {
+    table {
+      td {
+        max-width: 340px;
+        padding: 10px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: vars.$size-lg) {
+  .cleaning-service {
+    flex-direction: column;
+
+    img {
+      height: 100%;
+    }
+
+    .wp-block-media-text__media {
+      transform: none;
+      position: static;
+    }
+
+    .wp-block-media-text__content {
+      width: 100%;
     }
   }
 }

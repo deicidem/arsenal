@@ -1,5 +1,19 @@
+@use 'variables' as vars;
+
 .certificates {
   &-item {
     padding: 30px;
+  }
+}
+
+.slick-slide .slick-active{
+  width: 300px;
+}
+
+@media (max-width: vars.$size-xxl) {
+  .certificates {
+    &-item {
+      width: 300px !important;
+    }
   }
 }

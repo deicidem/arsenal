@@ -180,3 +180,26 @@
     }
   }
 }
+
+@media (max-width: vars.$size-xl) {
+  .form {
+    &-right {
+      &-img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: vars.$size-lg) {
+  .form {
+    flex-direction: column;
+    &-right{
+      margin-top: 40px;
+      margin-left: 0;
+      &-img {
+        display: block;
+      }
+    }
+  }
+}

@@ -26,3 +26,15 @@
     }
   }
 }
+
+@media (max-width: vars.$size-xl) {
+  .clients {
+    &-wrapper {
+      justify-content: space-evenly;
+      &-item {
+        padding: 10px 20px;
+        width: 150px;
+      }
+    }
+  }
+}
