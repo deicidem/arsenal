@@ -75,6 +75,7 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 						array(
 							'menu_id'        => 'primary-menu',
 							'menu_class' => 'header-menu',
+							'before' => '<button class="header-menu-arrow">&#10095;</button>'
 							// 'walker' => new True_Walker_Nav_Menu()
 						)
 					);
