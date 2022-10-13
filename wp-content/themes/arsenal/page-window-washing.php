@@ -85,35 +85,47 @@ get_header();
 					<div class="pluses-wrapper-line">
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number red">1</div>
-							<div class="pluses-wrapper-item-title">Предварительная оценка</div>
-							<div class="pluses-wrapper-item-text">Изучение особенностей объекта и составление план дальнейших действий.</div>
+							<div class="pluses-wrapper-item-text-wrapper">
+								<div class="pluses-wrapper-item-title">Предварительная оценка</div>
+								<div class="pluses-wrapper-item-text">Изучение особенностей объекта и составление план дальнейших действий.</div>
+							</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number orange">2</div>
-							<div class="pluses-wrapper-item-title">Подготовительные мероприятия</div>
-							<div class="pluses-wrapper-item-text">Рамы, стекла, жалюзи и уплотнители очищаются от грязи и пыли.</div>
+							<div class="pluses-wrapper-item-text-wrapper">
+								<div class="pluses-wrapper-item-title">Подготовительные мероприятия</div>
+								<div class="pluses-wrapper-item-text">Рамы, стекла, жалюзи и уплотнители очищаются от грязи и пыли.</div>
+							</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number green">3</div>
-							<div class="pluses-wrapper-item-title">Очистка стеклянных поверхностей</div>
-							<div class="pluses-wrapper-item-text">Мытье оконных стекол производится от верхней части с постепенным смещением вниз.</div>
+							<div class="pluses-wrapper-item-text-wrapper">
+								<div class="pluses-wrapper-item-title">Очистка стеклянных поверхностей</div>
+								<div class="pluses-wrapper-item-text">Мытье оконных стекол производится от верхней части с постепенным смещением вниз.</div>
+							</div>
 						</div>
 					</div>
 					<div class="pluses-wrapper-line">
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number purple">4</div>
-							<div class="pluses-wrapper-item-title">Мойка жалюзи и подоконника</div>
-							<div class="pluses-wrapper-item-text">Мойка горизонтальной внутренней части окон является обязательной.</div>
+							<div class="pluses-wrapper-item-text-wrapper">
+								<div class="pluses-wrapper-item-title">Мойка жалюзи и подоконника</div>
+								<div class="pluses-wrapper-item-text">Мойка горизонтальной внутренней части окон является обязательной.</div>
+							</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number blue">5</div>
-							<div class="pluses-wrapper-item-title">Наведение блеска</div>
-							<div class="pluses-wrapper-item-text">Окна считаются чисто вымытыми, если стекла сверкают образцовой чистотой.</div>
+							<div class="pluses-wrapper-item-text-wrapper">
+								<div class="pluses-wrapper-item-title">Наведение блеска</div>
+								<div class="pluses-wrapper-item-text">Окна считаются чисто вымытыми, если стекла сверкают образцовой чистотой.</div>
+							</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number pink">6</div>
-							<div class="pluses-wrapper-item-title">Протирка насухо</div>
-							<div class="pluses-wrapper-item-text">С рам и стекол полностью удаляется влага.</div>
+							<div class="pluses-wrapper-item-text-wrapper">
+								<div class="pluses-wrapper-item-title">Протирка насухо</div>
+								<div class="pluses-wrapper-item-text">С рам и стекол полностью удаляется влага.</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -138,7 +150,7 @@ get_header();
 					Наружное мытье осуществляется 3 основными способами – на лестнице, автомобильной вышке или в подвешенной
 					к крыше люльке. Если ни один из перечисленных методов не подходит, привлекаются так называемые «промышленные
 					альпинисты».
-			</div>
+				</div>
 		</section>
 	<?php
 	endwhile; // End of the loop.

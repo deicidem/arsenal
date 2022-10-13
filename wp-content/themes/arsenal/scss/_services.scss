@@ -76,3 +76,24 @@
     }
   }
 }
+
+@media (max-width: vars.$size-md) {
+  .services {
+    &-card {
+      padding: 10px;
+
+      &__title {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: vars.$size-md) {
+  .services {
+    &-card {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+}

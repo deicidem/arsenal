@@ -70,3 +70,13 @@
     }
   }
 }
+
+@media (max-width: vars.$size-sm) {
+  .footer {
+    &-block {
+      &-item{
+        font-size: 14px;
+      }
+    }
+  }
+}

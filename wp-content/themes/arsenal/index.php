@@ -104,7 +104,7 @@ get_header();
 				<div class="features-card">
 					<img src="<?php echo get_template_directory_uri() ?>/img/client.svg" class="features-card__image">
 					<div class="features-card__title">
-						Клиентоориентированность</div>
+						Клиентский подход</div>
 					</img>
 				</div>
 			</div>

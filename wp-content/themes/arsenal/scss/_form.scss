@@ -51,7 +51,7 @@
     margin: 10px auto !important;
 
     &::before {
-      background: vars.$color-main  !important;
+      background: vars.$color-main !important;
     }
   }
 
@@ -82,7 +82,6 @@
     .wpcf7-not-valid-tip {
       color: #fff;
     }
-
   }
 
   &-popup {
@@ -130,7 +129,6 @@
         margin-top: 20px;
       }
     }
-
 
     &-img {
       position: absolute;
@@ -194,11 +192,30 @@
 @media (max-width: vars.$size-lg) {
   .form {
     flex-direction: column;
-    &-right{
+    &-right {
       margin-top: 40px;
       margin-left: 0;
       &-img {
         display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: vars.$size-md) {
+  .form {
+    &-wrapper {
+      min-width: 300px;
+      max-width: 460px;
+    }
+    &-label input{
+      font-size: 16px;
+    }
+    &-right {
+      &-wrapper {
+        &-main {
+          font-size: 16px;
+        }
       }
     }
   }

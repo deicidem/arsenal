@@ -68,3 +68,16 @@
     }
   }
 }
+
+@media (max-width: vars.$size-md) {
+  .reviews {
+    &-card{
+      &__text{
+        font-size: 16px;
+      }
+    }
+    &-wrapper {
+      padding: 0 20px;
+    }
+  }
+}

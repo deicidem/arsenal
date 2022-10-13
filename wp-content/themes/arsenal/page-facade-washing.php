@@ -17,7 +17,7 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 	<div class="container"><?php echo do_shortcode("[breadcrumb]"); ?></div>
-	
+
 	<section class="section">
 		<div class="container">
 			<div class="main-blue-card">
@@ -57,25 +57,33 @@ get_header();
 				<div class="pluses-wrapper-line">
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number red">1</div>
-						<div class="pluses-wrapper-item-title">Оценка работ</div>
-						<div class="pluses-wrapper-item-text">Очистка фасада начинается с осмотра объекта.</div>
+						<div class="pluses-wrapper-item-text-wrapper">
+							<div class="pluses-wrapper-item-title">Оценка работ</div>
+							<div class="pluses-wrapper-item-text">Очистка фасада начинается с осмотра объекта.</div>
+						</div>
 					</div>
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number orange">2</div>
-						<div class="pluses-wrapper-item-title">Удаление грязи</div>
-						<div class="pluses-wrapper-item-text">Речь идет о крупных и отвердевших загрязнениях</div>
+						<div class="pluses-wrapper-item-text-wrapper">
+							<div class="pluses-wrapper-item-title">Удаление грязи</div>
+							<div class="pluses-wrapper-item-text">Речь идет о крупных и отвердевших загрязнениях</div>
+						</div>
 					</div>
 				</div>
 				<div class="pluses-wrapper-line">
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number purple">3</div>
-						<div class="pluses-wrapper-item-title">Мойка</div>
-						<div class="pluses-wrapper-item-text">Мытье фасада проводится водой или моющими средствами.</div>
+						<div class="pluses-wrapper-item-text-wrapper">
+							<div class="pluses-wrapper-item-title">Мойка</div>
+							<div class="pluses-wrapper-item-text">Мытье фасада проводится водой или моющими средствами.</div>
+						</div>
 					</div>
 					<div class="pluses-wrapper-item">
 						<div class="pluses-wrapper-item-number blue">4</div>
-						<div class="pluses-wrapper-item-title">Сушка</div>
-						<div class="pluses-wrapper-item-text">Вид сушки выбирается исходя из типа обрабатываемой поверхности.</div>
+						<div class="pluses-wrapper-item-text-wrapper">
+							<div class="pluses-wrapper-item-title">Сушка</div>
+							<div class="pluses-wrapper-item-text">Вид сушки выбирается исходя из типа обрабатываемой поверхности.</div>
+						</div>
 					</div>
 				</div>
 			</div>

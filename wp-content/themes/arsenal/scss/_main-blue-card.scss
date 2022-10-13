@@ -46,3 +46,19 @@
     }
   }
 }
+
+@media (max-width: vars.$size-md) {
+  .main-blue-card {
+    &__title {
+      font-size: 26px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    &__info {
+      max-width: 90%;
+      font-size: 16px;
+      margin: 10px auto 0 auto;
+    }
+  }
+}

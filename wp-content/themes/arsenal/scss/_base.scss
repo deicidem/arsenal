@@ -1,8 +1,8 @@
-@use 'variables' as vars;
+@use "variables" as vars;
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -18,7 +18,6 @@ body {
 }
 
 .breadcrumb-container {
-
   ul,
   ol {
     margin-left: 0;
@@ -54,7 +53,7 @@ p {
 
   &::after,
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
@@ -129,7 +128,13 @@ p {
 .button {
   margin-top: 10px;
   display: inline-block;
-  background-image: linear-gradient(to right, vars.$color-main-light, vars.$color-main-dark, vars.$color-main-light, vars.$color-main-dark);
+  background-image: linear-gradient(
+    to right,
+    vars.$color-main-light,
+    vars.$color-main-dark,
+    vars.$color-main-light,
+    vars.$color-main-dark
+  );
   border-radius: 10px;
   font-size: 20px;
   color: #fff;
@@ -137,20 +142,20 @@ p {
   padding: 10px 30px;
   box-shadow: 0 2px 4px rgba(#000, 0.15);
   background-size: 300% 100%;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   line-height: 1.5;
 
   &:hover {
     cursor: pointer;
     color: #fff;
     background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   &:focus {
@@ -211,16 +216,42 @@ p {
   .container {
     max-width: 720px;
   }
+
+  .section {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: vars.$size-md) {
   .container {
     max-width: 540px;
   }
+
+  .wp-block-table {
+    margin-top: 40px;
+    tr {
+      font-size: 16px;
+    }
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: vars.$size-sm) {
   .container {
     max-width: 100%;
+  }
+
+  .section {
+    padding: 20px 0;
+    &-title {
+      font-size: 24px;
+    }
+  }
+
+  .wp-block-table {
+    margin-top: 20px;
   }
 }

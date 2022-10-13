@@ -77,7 +77,7 @@ get_header();
 					</div>
 					<div class="requisites-wrapper-item">
 						<div class="requisites-wrapper-item-title">Юридический адрес: </div>
-						<div class="requisites-wrapper-item-text">109202, г. Москва, шоссе Фрезер, д. 11</div>
+						<div class="requisites-wrapper-item-text">г. Москва, ул. Маросейка д.3/13</div>
 					</div>
 					<div class="requisites-wrapper-item">
 						<div class="requisites-wrapper-item-title">ИНН:</div>

@@ -2,7 +2,6 @@
 
 @media (max-width: vars.$size-xxl) {
   .cleaning-service {
-
     p,
     li {
       font-size: 18px;
@@ -19,7 +18,7 @@
     table {
       td {
         max-width: 340px;
-        padding: 10px !important;
+        padding: 10px;
       }
     }
   }
@@ -40,6 +39,28 @@
 
     .wp-block-media-text__content {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: vars.$size-md) {
+  .cleaning-service {
+    flex-direction: column;
+    p {
+      font-size: 16px;
+    }
+    ul li {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: vars.$size-sm) {
+  .cleaning-service {
+    flex-direction: column;
+    td {
+      font-size: 14px;
+      max-width: auto !important;
     }
   }
 }

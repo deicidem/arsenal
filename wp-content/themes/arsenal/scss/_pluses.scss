@@ -16,27 +16,27 @@
       width: 28%;
 
       .red {
-        background: linear-gradient(92.64deg, #CF4140 0%, #EA4A49 97.59%);
+        background: linear-gradient(92.64deg, #cf4140 0%, #ea4a49 97.59%);
       }
 
       .orange {
-        background: linear-gradient(92.64deg, #FF8521 0%, #F9B233 97.59%);
+        background: linear-gradient(92.64deg, #ff8521 0%, #f9b233 97.59%);
       }
 
       .green {
-        background: linear-gradient(92.64deg, #63E144 0%, #37985E 96.57%);
+        background: linear-gradient(92.64deg, #63e144 0%, #37985e 96.57%);
       }
 
       .purple {
-        background: linear-gradient(66.51deg, #9A77FD 0%, #4607F9 91.4%);
+        background: linear-gradient(66.51deg, #9a77fd 0%, #4607f9 91.4%);
       }
 
       .blue {
-        background: linear-gradient(92.64deg, #52C2F2 0%, #0682B7 97.59%);
+        background: linear-gradient(92.64deg, #52c2f2 0%, #0682b7 97.59%);
       }
 
       .pink {
-        background: linear-gradient(66.51deg, #F5A4D5 0%, #FF2FAD 91.4%);
+        background: linear-gradient(66.51deg, #f5a4d5 0%, #ff2fad 91.4%);
       }
 
       &-number {
@@ -72,10 +72,59 @@
         &-text {
           font-size: 18px;
         }
-        &-title{
+        &-title {
           font-size: 20px;
           line-height: 1.3;
         }
+      }
+    }
+  }
+}
+@media (max-width: vars.$size-md) {
+  .pluses {
+    &-wrapper {
+      &-item {
+        width: 45%;
+        &-text {
+          font-size: 16px;
+        }
+        &-title {
+          font-size: 18px;
+          line-height: 1;
+        }
+      }
+      &-line {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (max-width: vars.$size-sm) {
+  .pluses {
+    &-wrapper {
+
+      &-item {
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        &-number{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+        }
+        &-text{
+          margin: 0 0 0 10px;
+        }
+        &-title{
+          margin: 0 0 4px 10px;
+        }
+      }
+      &-line {
+        margin: 0;
+        flex-direction: column;
       }
     }
   }
