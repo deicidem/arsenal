@@ -25,7 +25,6 @@
       &-wrapper {
         position: absolute;
         right: 30px;
-
       }
     }
 
@@ -61,8 +60,8 @@
 @media (max-width: vars.$size-xxl) {
   .reviews {
     &-card {
-      padding: 30px 20px;
-      &__text{
+      padding: 10px 20px;
+      &__text {
         font-size: 18px;
       }
     }
@@ -71,13 +70,29 @@
 
 @media (max-width: vars.$size-md) {
   .reviews {
-    &-card{
-      &__text{
+    &-card {
+      &__text {
         font-size: 16px;
+      }
+      &__header {
+        margin-top: 30px;
       }
     }
     &-wrapper {
       padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: vars.$size-sm) {
+  .reviews {
+    &-card {
+      &__text {
+        font-size: 14px;
+      }
+    }
+    &-wrapper {
+      padding: 0 10px;
     }
   }
 }

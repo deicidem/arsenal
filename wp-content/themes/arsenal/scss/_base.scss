@@ -220,6 +220,10 @@ p {
   .section {
     padding: 40px 0;
   }
+
+  .wp-block-media-text__media{
+    width: 100% !important;
+  }
 }
 
 @media (max-width: vars.$size-md) {
@@ -236,6 +240,11 @@ p {
 
   .section-title {
     font-size: 28px;
+  }
+
+  .button {
+    padding: 8px 20px;
+    font-size: 18px;
   }
 }
 

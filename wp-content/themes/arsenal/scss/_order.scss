@@ -42,7 +42,6 @@
   }
 }
 
-
 @media (max-width: vars.$size-md) {
   .order {
     &-wrapper {
@@ -51,12 +50,15 @@
       align-items: center;
     }
     &-content {
+      margin-top: 20px;
       width: 100%;
       font-size: 16px;
     }
     &-image {
       position: static;
       transform: none;
+      max-height: 350px;
+      margin: 0;
     }
   }
 }
