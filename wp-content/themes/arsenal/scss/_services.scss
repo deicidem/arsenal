@@ -1,4 +1,4 @@
-@use 'variables' as vars;
+@use "variables" as vars;
 
 .services {
   &-cards {
@@ -53,6 +53,14 @@
     &:hover &__title {
       color: vars.$color-main-light;
     }
+    &__circle {
+      min-width: 30px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      background: linear-gradient(92.64deg, #52c2f2 0%, #0682b7 97.59%);
+    }
   }
 }
 
@@ -84,6 +92,12 @@
 
       &__title {
         font-size: 16px;
+      }
+
+      &__circle {
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
       }
     }
   }

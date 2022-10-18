@@ -65,80 +65,6 @@ get_header();
 		</div>
 	</section>
 
-	<section class="section">
-		<div class="container">
-			<div class="main-blue-card">
-				<div class="main-blue-card__title">
-					Специальное предложение
-				</div>
-				<div class="main-blue-card__info">
-					Для магазинов и ресторанов расположенных на 1-х этажах:
-					при заключении договора на регулярное мытье витрин, скидка до 30% от прайс-листа
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section features">
-		<div class="container">
-			<h2 class="section-title">Выбирайте нас</h2>
-			<div class="features-wrapper">
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/price.svg" class="features-card__image">
-					<div class="features-card__title">
-						Конкурентоспособные цены</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/material.svg" class="features-card__image">
-					<div class="features-card__title">
-						Профессиональные чистящие средства</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/vacuum.svg" class="features-card__image">
-					<div class="features-card__title">
-						Специализированное оборудование</div>
-					</img>
-				</div>
-				<div class="features-card">
-					<img src="<?php echo get_template_directory_uri() ?>/img/client.svg" class="features-card__image">
-					<div class="features-card__title">
-						Клиентский подход</div>
-					</img>
-				</div>
-			</div>
-	</section>
-
-	<section class="section about">
-		<div class="container">
-			<?php $page = get_page_by_path('main');
-			$pages = get_pages([
-				'include'      => $page->ID,
-				'post_type'    => 'page',
-				'post_status'  => 'publish',
-			]);
-			foreach ($pages as $post) {
-				setup_postdata($post);
-			?>
-				<div class="about-wrapper">
-					<div class="about-content">
-						<h2 class="section-title">О компании</h2>
-						<?php the_content() ?>
-						<a href="<?php the_permalink() ?>" class="button">Подробнее</a>
-					</div>
-					<img src="<?php echo get_the_post_thumbnail_url() ?>" class="about-image">
-				</div>
-
-			<?php
-				break;
-			}
-			wp_reset_postdata();
-			?>
-
-		</div>
-	</section>
-
 	<section class="section order">
 		<div class="container">
 			<?php $page = get_page_by_path('order');
@@ -165,6 +91,20 @@ get_header();
 			wp_reset_postdata();
 			?>
 
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="main-blue-card">
+				<div class="main-blue-card__title">
+					Специальное предложение
+				</div>
+				<div class="main-blue-card__info">
+					Для магазинов и ресторанов расположенных на 1-х этажах:
+					при заключении договора на регулярное мытье витрин, скидка до 30% от прайс-листа
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -204,6 +144,66 @@ get_header();
 		</div>
 	</section>
 
+	<section class="section about">
+		<div class="container">
+			<?php $page = get_page_by_path('main');
+			$pages = get_pages([
+				'include'      => $page->ID,
+				'post_type'    => 'page',
+				'post_status'  => 'publish',
+			]);
+			foreach ($pages as $post) {
+				setup_postdata($post);
+			?>
+				<div class="about-wrapper">
+					<div class="about-content">
+						<h2 class="section-title">О компании</h2>
+						<?php the_content() ?>
+						<a href="<?php the_permalink() ?>" class="button">Подробнее</a>
+					</div>
+					<img src="<?php echo get_the_post_thumbnail_url() ?>" class="about-image">
+				</div>
+
+			<?php
+				break;
+			}
+			wp_reset_postdata();
+			?>
+
+		</div>
+	</section>
+
+	<section class="section features">
+		<div class="container">
+			<h2 class="section-title">Выбирайте нас</h2>
+			<div class="features-wrapper">
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/price.svg" class="features-card__image">
+					<div class="features-card__title">
+						Конкурентоспособные цены</div>
+					</img>
+				</div>
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/material.svg" class="features-card__image">
+					<div class="features-card__title">
+						Профессиональные чистящие средства</div>
+					</img>
+				</div>
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/vacuum.svg" class="features-card__image">
+					<div class="features-card__title">
+						Специализированное оборудование</div>
+					</img>
+				</div>
+				<div class="features-card">
+					<img src="<?php echo get_template_directory_uri() ?>/img/client.svg" class="features-card__image">
+					<div class="features-card__title">
+						Клиентский подход</div>
+					</img>
+				</div>
+			</div>
+	</section>
+
 	<section class="section">
 		<div class="container">
 			<div class="form">
@@ -225,8 +225,9 @@ get_header();
 							<div class="forn-right-subtitle">cотрудников: круглосуточно</div>
 						</div>
 						<div class="form-right-wrapper-text">
-							<div class="forn-right-subtitle"><strong>+7 (495) 625-15-80</strong></div>
-							<div class="forn-right-subtitle"><strong>+7 (495) 790-20-22</strong></div>
+							<div class="forn-right-subtitle"><strong>Телефон:</strong></div>
+							<a class="header-branding__contacts__phone" href="tel:84956251580">+7 (495) 625-15-80</a>
+							<a class="header-branding__contacts__phone" href="tel:84957902022">+7 (495) 790-20-22</a>
 						</div>
 						<div class="form-right-wrapper-text">
 							<div class="forn-right-subtitle"><strong>Электронная почта:</strong></div>

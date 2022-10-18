@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -51,8 +52,8 @@ get_header();
 						setup_postdata($post);
 					?>
 						<a href="<?php the_permalink(); ?>" class="services-card">
-							<div class="services-card__img">
-								<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+							<div class="services-card__circle">
+								<!-- <img src="<?php echo get_the_post_thumbnail_url(); ?>"> -->
 							</div>
 
 							<div class="services-card__content">
@@ -112,7 +113,7 @@ get_header();
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number orange">2</div>
-							<div class="pluses-wrapper-item-text">Сборка крупного строительного мусора и  мелких и сыпучих отходов.</div>
+							<div class="pluses-wrapper-item-text">Сборка крупного строительного мусора и мелких и сыпучих отходов.</div>
 						</div>
 						<div class="pluses-wrapper-item">
 							<div class="pluses-wrapper-item-number green">3</div>
@@ -161,26 +162,28 @@ get_header();
 							<div class="forn-right-subtitle">cотрудников: круглосуточно</div>
 						</div>
 						<div class="form-right-wrapper-text">
-							<div class="forn-right-subtitle"><strong>+7 (495) 625-15-80</strong></div>
-							<div class="forn-right-subtitle"><strong>+7 (495) 790-20-22</strong></div>
-						</div>
-						<div class="form-right-wrapper-text">
-							<div class="forn-right-subtitle"><strong>Электронная почта:</strong></div>
-							<div class="forn-right-subtitle">citi@citicleaning.ru</div>
-						</div>
-						<div class="form-right-wrapper-text">
-							<div class="form-right-link">
-								<img src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="">
-								<img src="<?php echo get_template_directory_uri() ?>/img/vk.svg" alt="">
-							</div>
+							<div class="forn-right-subtitle"><strong>Телефон:</strong></div>
+							<a class="header-branding__contacts__phone" href="tel:84956251580">+7 (495) 625-15-80</a>
+							<a class="header-branding__contacts__phone" href="tel:84957902022">+7 (495) 790-20-22</a>
 						</div>
 					</div>
-
-					<div class="form-right-img">
-						<img src="<?php echo get_template_directory_uri() ?>/img/form-img.png" alt="">
+					<div class="form-right-wrapper-text">
+						<div class="forn-right-subtitle"><strong>Электронная почта:</strong></div>
+						<div class="forn-right-subtitle">citi@citicleaning.ru</div>
+					</div>
+					<div class="form-right-wrapper-text">
+						<div class="form-right-link">
+							<img src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/vk.svg" alt="">
+						</div>
 					</div>
 				</div>
+
+				<div class="form-right-img">
+					<img src="<?php echo get_template_directory_uri() ?>/img/form-img.png" alt="">
+				</div>
 			</div>
+		</div>
 		</div>
 		</div>
 		</div>
