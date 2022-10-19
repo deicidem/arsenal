@@ -115,21 +115,20 @@ get_header();
 							<a class="header-branding__contacts__phone" href="tel:84956251580">+7 (495) 625-15-80</a>
 							<a class="header-branding__contacts__phone" href="tel:84957902022">+7 (495) 790-20-22</a>
 						</div>
-					</div>
-					<div class="form-right-wrapper-text">
-						<div class="forn-right-subtitle"><strong>Электронная почта:</strong></div>
-						<div class="forn-right-subtitle">citi@citicleaning.ru</div>
-					</div>
-					<div class="form-right-wrapper-text">
-						<div class="form-right-link">
-							<img src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="">
-							<img src="<?php echo get_template_directory_uri() ?>/img/vk.svg" alt="">
+						<div class="form-right-wrapper-text">
+							<div class="forn-right-subtitle"><strong>Электронная почта:</strong></div>
+							<div class="forn-right-subtitle">citi@citicleaning.ru</div>
+						</div>
+						<div class="form-right-wrapper-text">
+							<div class="form-right-link">
+								<img src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="">
+								<img src="<?php echo get_template_directory_uri() ?>/img/vk.svg" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="form-right-img">
-					<img src="<?php echo get_template_directory_uri() ?>/img/form-img.png" alt="">
+					<div class="form-right-img">
+						<img src="<?php echo get_template_directory_uri() ?>/img/form-img.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
