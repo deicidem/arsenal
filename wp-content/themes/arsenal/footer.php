@@ -39,7 +39,7 @@
 		
 		<div class="footer-wrapper-privacy">
 		<div class="footer-image">
-	<img  src="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" alt="ARSENAL Cleaning">
+	<img  src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="ARSENAL Cleaning">
 
 		</div>
 			© 2020, Клининговая компания «ARSENAL Cleaning» <a href="">Политика конфиденциальности</a>

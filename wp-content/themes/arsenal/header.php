@@ -55,7 +55,7 @@ require get_template_directory() . '/inc/True_Walker_Nav_Menu.php';
 			<div class="container">
 				<div class="header-branding">
 					<a href="<?php echo home_url() ?>">
-						<img class="header-branding__logo" src="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" alt="ARSENAL Cleaning">
+						<img class="header-branding__logo" src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="ARSENAL Cleaning">
 					</a>
 
 					<div class="header-branding__contacts">
