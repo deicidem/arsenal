@@ -118,6 +118,9 @@ p {
   padding: 10px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   background-size: 300% 100%;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   line-height: 1.5;
 }
@@ -125,6 +128,9 @@ p {
   cursor: pointer;
   color: #fff;
   background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .button:focus {

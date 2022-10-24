@@ -57,7 +57,7 @@ get_header();
 				foreach ($my_posts as $post) {
 					setup_postdata($post);
 				?>
-				 <img src="<?php the_post_thumbnail_url()?>" class="certificates-item">
+				 <img data-fancybox data-src="<?php the_post_thumbnail_url()?>" src="<?php the_post_thumbnail_url()?>" class="certificates-item">
 				<?php
 				}
 

@@ -12,7 +12,7 @@
 		return;
 	}
 
-	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+	const button = document.querySelector('.menu-toggle');
 
 	// Return early if the button doesn't exist.
 	if ( 'undefined' === typeof button ) {
@@ -45,8 +45,7 @@
 	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
 	document.addEventListener( 'click', function( event ) {
 		const isClickInside = siteNavigation.contains( event.target );
-
-		if ( ! isClickInside ) {
+		if ( !(isClickInside || button.isEqualNode(event.target)) ) {
 			siteNavigation.classList.remove( 'toggled' );
 			button.setAttribute( 'aria-expanded', 'false' );
 		}
